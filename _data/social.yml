@@ -3,6 +3,9 @@ email:
   name: Email
   icon: icon-mail
   prepend: 'mailto:'
+discord:
+  name: Discord
+  icon: icon-discord
 amazon:
   name: Amazon
   icon: icon-amazon
