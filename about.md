@@ -4,9 +4,6 @@ image: /assets/img/logo.png
 description: >
   About SIGRobotics
 hide_description: true
-redirect_from:
-  - /download/
-  - /
 ---
 
 # About
