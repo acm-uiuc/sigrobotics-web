@@ -35,7 +35,7 @@ For more information and past meetings, see the [meetings] page.
 
 Advait Patel
 
-Henry Che
+[Henry Che](https://hungdche.github.io/)
 
 [Bhargav Chandaka](https://bchandaka.github.io/)
 
