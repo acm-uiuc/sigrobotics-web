@@ -6,6 +6,7 @@ description: >
 hide_description: true
 redirect_from:
   - /download/
+  - /
 ---
 
 # About
@@ -15,19 +16,20 @@ redirect_from:
 ## SIGRobotics
 
 Welcome to SIGRobotics, the ACM Special Interest Group for robotics at UIUC.
-
-If you haven't already, join our ![Discord](https://discord.gg/xBNhspqwSc)!
 {:.lead}
+
+If you haven't already, join our [Discord]!
 
 1. this list will be replaced by the toc
 {:toc .large-only}
 
-![logo](assets/img/logo.png)
-<!-- {:.lead width="1080" height="1080" loading="lazy"} -->
+<!-- ![logo](assets/img/logo.png){:.lead width="720" height="720" loading="lazy"} -->
 
 
 ## Meetings
 TBD
+
+For more information and past meetings, see the [meetings] page.
 
 
 ## Executive Board
@@ -42,3 +44,8 @@ Henry Che
 
 
 ## Members
+
+
+
+[Discord]: https://discord.gg/xBNhspqwSc
+[meetings]: meetings.md
