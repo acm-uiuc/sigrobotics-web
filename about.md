@@ -24,7 +24,7 @@ If you haven't already, join our [Discord]!
 
 
 ## Meetings
-TBD
+Tentatively Mondays 5-7PM, Siebel 2405 (Pending Reservation)
 
 For more information and past meetings, see the [meetings] page.
 
@@ -40,8 +40,10 @@ Advait Patel
 [Bhargav Chandaka](https://bchandaka.github.io/)
 
 
-## Members
-
+## Relevant Links
+- [Illinois Robotics Group](https://robotics.illinois.edu/)
+- [UIUC Robotics Seminar Series](https://robotics.illinois.edu/robotics-seminar-series/)
+- [ECEB OpenLab](https://openlab.ece.illinois.edu/)
 
 
 [Discord]: https://discord.gg/xBNhspqwSc
