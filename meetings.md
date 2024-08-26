@@ -7,4 +7,6 @@ hide_description: true
 
 # Meetings
 ## Fall 2024
-* TBD
+- 08/25, Quad Day
+- 09/05, ACM Open House
+- TBD
