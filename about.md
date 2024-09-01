@@ -24,7 +24,7 @@ If you haven't already, join our [Discord]!
 
 
 ## Meetings
-Tentatively Mondays 5-7PM, Siebel 2405 (Pending Reservation)
+Tentatively Thursdays 5-7PM, Siebel 2405 (Pending Reservation)
 
 For more information and past meetings, see the [meetings] page.
 
@@ -33,7 +33,7 @@ For more information and past meetings, see the [meetings] page.
 
 [Gloria Wang](https://gxywang.github.io/)
 
-Advait Patel
+[Advait Patel](www.advaitpatel.com)
 
 [Henry Che](https://hungdche.github.io/)
 
