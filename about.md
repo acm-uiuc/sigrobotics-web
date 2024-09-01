@@ -33,7 +33,7 @@ For more information and past meetings, see the [meetings] page.
 
 [Gloria Wang](https://gxywang.github.io/)
 
-[Advait Patel](www.advaitpatel.com)
+[Advait Patel](https://advaitpatel.com)
 
 [Henry Che](https://hungdche.github.io/)
 
