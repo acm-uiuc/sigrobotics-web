@@ -24,7 +24,10 @@ If you haven't already, join our [Discord]!
 
 
 ## Meetings
-Tentatively Thursdays 5-7PM, Siebel 2405 (Pending Reservation)
+**General Meetings**: Thursdays 5-7PM, Siebel 2405 (Pending Reservation)
+
+**Deep Dive Meetings**: Sundays 2-3PM, DCL 1310
+
 
 For more information and past meetings, see the [meetings] page.
 
@@ -47,4 +50,4 @@ For more information and past meetings, see the [meetings] page.
 
 
 [Discord]: https://discord.gg/xBNhspqwSc
-[meetings]: meetings.md
+[meetings]: https://sigrobotics-uiuc.github.io/meetings/

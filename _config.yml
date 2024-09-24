@@ -72,8 +72,8 @@ copyright:             © 2024.
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              10
-paginate_path:         /:num/
+# paginate:              10
+# paginate_path:         /:num/
 
 
 # Theme
@@ -288,14 +288,14 @@ hydejack:
 # Collections
 # ----------------------------------------------------------------------------------------
 
-collections:
-  featured_categories:
-    permalink:         /:name/
-    output:            true
+# collections:
+#   featured_categories:
+#     permalink:         /:name/
+#     output:            true
 
-  featured_tags:
-    permalink:         /tag-:name/
-    output:            true
+#   featured_tags:
+#     permalink:         /tag-:name/
+#     output:            true
 
   # projects:
   #   permalink:         /projects/:path/
