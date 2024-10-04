@@ -20,11 +20,9 @@ If you haven't already, join our [Discord]!
 1. this list will be replaced by the toc
 {:toc .large-only}
 
-<!-- ![logo](assets/img/logo.png){:.lead width="720" height="720" loading="lazy"} -->
-
 
 ## Meetings
-**General Meetings**: Thursdays 5-7PM, Siebel 2405 (Pending Reservation)
+**General Meetings**: Thursdays 5-7PM, Siebel 1304
 
 **Deep Dive Meetings**: Sundays 2-3PM, DCL 1310
 

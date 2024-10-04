@@ -13,12 +13,12 @@ hide_description: true
 
 Manipulate objects using robot learning on a 3D-printed arm.
 
-## Simulation
-[[GitHub]()]
-
-Explore popular simulation software like Mujoco and Isaac Gym.
-
 ## Mobile Robot
 [[GitHub]()]
 
 Build a mobile robot to drive around Siebel.
+
+## Mobile Manipulation
+[[GitHub]()]
+
+Put the robot arm on the mobile robot and drive the arm around!
