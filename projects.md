@@ -11,14 +11,13 @@ hide_description: true
 ## Manipulation with Robot Arm
 [[GitHub](https://github.com/SIGRobotics-UIUC/lerobot)]
 
-Manipulate objects using robot learning on a 3D-printed arm.
+Manipulate objects using robot learning on 3D-printed arms.
 
-## Mobile Robot
-[[GitHub]()]
-
-Build a mobile robot to drive around Siebel.
+See examples [here](https://x.com/adv8p/status/1838255612691390677) and [here](https://x.com/adv8p/status/1831748218054701112)
 
 ## Mobile Manipulation
-[[GitHub]()]
+Use Turtlebots to do to do a variety of tasks, such as getting Advait coffee, navigating around the ACM room, and mapping Siebel. 
+We're also developing our own low-cost mobile manipulator, which we plan to open-source.
 
-Put the robot arm on the mobile robot and drive the arm around!
+## Simulation
+Perform a variety of robotic tasks, such as humanoid locomotion, pick-and-place, and navigation, in simulation using MuJoCo.
