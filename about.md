@@ -9,6 +9,8 @@ hide_description: true
 # About
 
 <!--author-->
+1. this list will be replaced by the toc
+{:toc .large-only}
 
 ## SIGRobotics
 
@@ -17,17 +19,18 @@ Welcome to SIGRobotics, the ACM Special Interest Group for robotics at UIUC.
 
 If you haven't already, join our [Discord]!
 
-1. this list will be replaced by the toc
-{:toc .large-only}
-
 
 ## Meetings
 **General Meetings**: Thursdays 5-7PM, Siebel 1304
 
-**Deep Dive Meetings**: Sundays 2-3PM, DCL 1310
+- Our weekly general meetings feature lectures and interactive workshops. 
+- Past meetings can be found on the [meetings] page.
 
 
-For more information and past meetings, see the [meetings] page.
+**Deep Dive Meetings**: Sundays 2-3PM, Siebel 1302
+
+- Our deep dive meetings provide collaborative work time on projects
+- There will also be speaker events and paper review sessions.
 
 
 ## Executive Board
@@ -48,4 +51,4 @@ For more information and past meetings, see the [meetings] page.
 
 
 [Discord]: https://discord.gg/xBNhspqwSc
-[meetings]: https://sigrobotics-uiuc.github.io/meetings/
+[meetings]: meetings.md

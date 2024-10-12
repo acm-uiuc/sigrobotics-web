@@ -54,6 +54,8 @@ menu:
     url:               /projects/
   - title:             Meetings
     url:               /meetings/
+  -title:              Sponsors
+    url:               /sponsors/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -66,7 +68,7 @@ menu:
 #     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2024.
+copyright:             © 2024 SIGRobotics. ACM@UIUC is a 501(c)(3) non-profit organization.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
