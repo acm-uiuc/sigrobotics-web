@@ -1,0 +1,23 @@
+.meetings {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .meeting-times {
+    margin-bottom: 20px;
+  }
+  
+  .meeting-schedule {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .meeting-schedule th, .meeting-schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .meeting-schedule th {
+    background-color: #f2f2f2;
+  }
