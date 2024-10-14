@@ -37,7 +37,7 @@ If you haven't already, join our [Discord]!
 
 [Gloria Wang](https://gxywang.github.io/)
 
-[Advait Patel](https://advaitpatel.com)
+[Advait Patel](https://advaitpatel.com/)
 
 [Henry Che](https://hungdche.github.io/)
 
