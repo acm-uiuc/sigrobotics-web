@@ -54,7 +54,7 @@ menu:
     url:               /projects/
   - title:             Meetings
     url:               /meetings/
-  -title:              Sponsors
+  - title:              Sponsors
     url:               /sponsors/
 
 # Add links to the footer.
