@@ -21,13 +21,13 @@ If you haven't already, join our [Discord]!
 
 
 ## Meetings
-**General Meetings**: Thursdays 5-7PM, Siebel 1304
+**General Meetings**: Tuesdays 6-7:30PM, Siebel 1304
 
 - Our weekly general meetings feature lectures and interactive workshops. 
 - Past meetings can be found on the [meetings] page.
 
 
-**Deep Dive Meetings**: Sundays 2-3PM, Siebel 1302
+**Deep Dive Meetings**: Saturdays 1-3PM, Siebel 1302
 
 - Our deep dive meetings provide collaborative work time on projects
 - There will also be speaker events and paper review sessions.
