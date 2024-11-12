@@ -16,3 +16,4 @@ hide_description: true
 - 10/10, **Intro to Deep Learning** [[slides](https://docs.google.com/presentation/d/1hsOY4OF05Be9EkXTLK5WRUk9DVEzOov0svzqR9LSVa8/edit?usp=sharing)] [[source](https://colab.research.google.com/drive/17N6acHS-qvgtfgkI0crFkxKz37-6KQsl?usp=sharing)]
 - 10/17, **Intro to Simulation** [[slides](https://docs.google.com/presentation/d/1vTJGNPUZe9h3PEfZOc5Zf5h5ok5GqTXdLYwEMIZbePA/edit#slide=id.g3042e88b18b_0_1)] [[source](https://github.com/SIGRobotics-UIUC/gym-lowcostrobot)]
 - 10/22, **Intro to Control Theory** [[slides](https://docs.google.com/presentation/d/1LW7BMl6lEWRnv0WcYlCofJ1pBVoirI4S0ND613qb-ng/edit?usp=sharing)] [[source](https://sparshg.dev/pid-balancer/)]
+- 11/12, **Robot Simulation** [[slides](https://docs.google.com/presentation/d/1KQSFmpOpbs8NVGUocRyxGzeousKPUbfGytIpl0VJ4zs/edit?usp=sharing)] [[source](https://github.com/SIGRobotics-UIUC/min-cartpole)]

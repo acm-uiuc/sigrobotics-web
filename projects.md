@@ -23,5 +23,8 @@ Use Turtlebots to do to do a variety of tasks, such as getting Advait coffee, na
 ## Low-Cost Mobile Manipulator
 Develop our own low-cost mobile manipulator! And open-source it.
 
+## Mini Humanoid
+Working with KScale Labs to develop our own 3D-printed mini humanoid.
+
 ## Simulation
 Perform a variety of robotic tasks, such as humanoid locomotion, pick-and-place, and navigation, in simulation using MuJoCo.
