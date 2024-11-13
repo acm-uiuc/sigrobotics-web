@@ -12,19 +12,13 @@ Reach out at [sigrobotics@acm.illinois.edu](mailto:sigrobotics@acm.illinois.edu)
 # Sponsors
 Thank you for supporting SIGRobotics!
 
-<div class="row">
-  <div class="column">
-    <a href="https://siebelschool.illinois.edu/"><img src="https://pbs.twimg.com/profile_images/1820548762588135425/btfn2u9P_400x400.jpg" alt="Illinois CDS" width="200"/></a>
-  </div>
-  <div class="column">
-    <a href="https://kscale.dev/"><img src="https://avatars.githubusercontent.com/u/89321298?s=200&v=4" alt="K-Scale Labs" width="200"/></a>
-  </div>
-</div> 
+<p float="left">
+  <a href="https://siebelschool.illinois.edu/"><img src="https://pbs.twimg.com/profile_images/1820548762588135425/btfn2u9P_400x400.jpg" alt="Illinois CDS" width="200"/></a>
+  <a href="https://kscale.dev/"><img src="https://avatars.githubusercontent.com/u/89321298?s=200&v=4" alt="K-Scale Labs" width="200"/></a>
+</p> 
 
 
 # Partners
-<div class="row">
-  <div class="column">
-    <a href="https://acm.illinois.edu/"><img src="https://acm-brand-images.s3.amazonaws.com/banner-white.png" alt="ACM@UIUC" width="200" style="background-color:#3e486f;"/></a>
-  </div>
-</div> 
+<p float="left">
+  <a href="https://acm.illinois.edu/"><img src="https://acm-brand-images.s3.amazonaws.com/banner-white.png" alt="ACM@UIUC" width="200" style="background-color:#3e486f;"/></a>
+</p> 
