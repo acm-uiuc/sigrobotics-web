@@ -15,6 +15,7 @@ Thank you for supporting SIGRobotics!
 <p float="left">
   <a href="https://siebelschool.illinois.edu/"><img src="https://pbs.twimg.com/profile_images/1820548762588135425/btfn2u9P_400x400.jpg" alt="Illinois CDS" width="200"/></a>
   <a href="https://kscale.dev/"><img src="https://avatars.githubusercontent.com/u/89321298?s=200&v=4" alt="K-Scale Labs" width="200"/></a>
+  <a href="https://huggingface.com"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Huggingface/LeRobot" width="200"/></a>
 </p> 
 
 
