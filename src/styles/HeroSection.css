@@ -1,0 +1,116 @@
+.hero-section {
+    background-color: white;
+    padding: 4rem 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    max-width: 48rem;
+    line-height: 1.6;
+}
+
+.hero-description a {
+    color: #2563eb;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.hero-description a:hover {
+    color: #1e40af;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.hero-button {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    border-radius: 0.25rem;
+    background: transparent;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #f3f4f6;
+}
+
+.hero-button.filled {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+.hero-button.filled:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+.hero-image-container {
+    width: 100%;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-image-container {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.125rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .hero-image-container {
+        height: 300px;
+    }
+}
