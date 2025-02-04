@@ -22,11 +22,13 @@ We're using Turtlebots to do to do a variety of tasks, such as getting Advait co
 
 ## Low-Cost Mobile Manipulator
 We're currently developing our own low-cost, open-source, mobile manipulator in collaboration with [Huggingface LeRobot](https://huggingface.com). And open-source it.
-<img src="\assets\img\lekiwi.png" alt="low-cost mobile manipulator" width="200"/></a>
+
+<img src="\assets\img\lekiwi.png" alt="low-cost mobile manipulator" width="200"/>
 
 ## Mini Humanoid
 We're training locomotion policies with our own 3D-printed miniauture humanoid, sponsored by [KScale Labs](https://kscale.dev/).
-<img src="\assets\img\stompy.jpg" alt="humanoid" width="200"/></a>
+
+<img src="\assets\img\stompy.jpg" alt="humanoid" width="200"/>
 
 ## Simulation
 Perform a variety of robotic tasks, such as humanoid locomotion, pick-and-place, and navigation, in simulation using MuJoCo.
