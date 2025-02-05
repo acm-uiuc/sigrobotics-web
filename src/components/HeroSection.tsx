@@ -10,19 +10,19 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
-    title = "Your Club's Title Here",
-    description = "For over X years, our robotics club has been fostering innovation and leadership for students everywhere. Our inclusive community has created a strong network of students and alumni, bringing their diverse interests to robotics.",
-    imageSrc = "/path/to/your/image.jpg",
-    imageAlt = "Robotics Club Activity"
+    title = "SIGRobotics",
+    description = "We are a student-run robotics special-interest group.",
+    imageSrc = "/../assets/open_house.png",
+    imageAlt = "ACM Open House"
 }) => {
     return (
-        <div className="hero-section">
+        <div className="layout-xl">
             <div className="hero-container">
                 <div className="hero-content">
-                    <h1 className="hero-title">
+                    <h1 className="heading-title">
                         {title}
                     </h1>
-                    <p className="hero-description">
+                    <p>
                         {description}
                     </p>
                     <div className="hero-buttons">
@@ -30,16 +30,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                             href="https://discord.gg/d6MXagJTb8"
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            className="hero-button"
+                            className="button-secondary"
                         >
                             Join Our Discord
                         </a>
-                        <Link to="/about" className="hero-button filled">
+                        <Link to="/about" className="button-primary">
                             Learn More
                         </Link>
                     </div>
                 </div>
-                <div className="hero-image-container">
+                <div className="layout-img">
                     <img
                         src={imageSrc}
                         alt={imageAlt}

@@ -24,13 +24,12 @@ const Contact: React.FC = () => {
       
       <div className="contact-info">
         <h2>Club Information</h2>
-        <p>Email: robotics@university.edu</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Address: 123 University St, Campustown, ST 12345</p>
+        <p>Email: sigrobotics@acm.illinois.edu</p>
+        <p>Address: 201 N Goodwin Ave, Urbana, IL 61801</p>
       </div>
       
       <form className="contact-form" onSubmit={handleSubmit}>
-        <h2>Send us a message</h2>
+        <h2>Send us a message!</h2>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input

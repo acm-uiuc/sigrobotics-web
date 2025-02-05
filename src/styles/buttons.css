@@ -1,0 +1,55 @@
+.default-button-styles,
+.button-primary,
+.button-primary-disabled,
+.button-secondary {
+    /* height: ...;
+    box-sizing: border-box; */
+    border-radius: 4px;
+    padding: 15px 32px;
+}
+
+.button-primary {
+    background: var(--primary-theme-color);
+    color: var(--primary-white-color);
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button-primary:hover {
+    background: var(--primary-theme-color-hover);
+    color: var(--primary-white-color);
+}
+
+.button-primary-disabled {
+    cursor: default;
+    background: var(--primary-theme-color-light);
+    color: var(--primary-white-color);
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button-secondary {
+    background: transparent;
+    color: var(--primary-theme-color);
+    cursor: pointer;
+    border: 2px solid var(--primary-black-color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button-secondary:hover {
+  background: var(--primary-dim-color);
+}

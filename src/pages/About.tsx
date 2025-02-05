@@ -1,33 +1,66 @@
 // pages/About.tsx
 import React from 'react';
-import '../styles/About.css';
+import '../styles/style.css';
+import bhargav from '../assets/exec/bhargav.jpg';
+import gloria from '../assets/exec/gloria.jpg';
 
 const About: React.FC = () => {
   return (
-    <div className="about">
-      <h1>About Our Robotics Club</h1>
-      <section className="mission">
-        <h2>Our Mission</h2>
-        <p>The Robotics Club is dedicated to fostering innovation, creativity, and technical skills in the field of robotics. We aim to provide a collaborative environment where students can learn, experiment, and build amazing robots.</p>
+    <div className="layout-xl">
+      <h1 className="heading-title">About</h1>
+      <br></br>
+      <section>
+        <h2 className="heading-subtitle-bold">Welcome to SIGRobotics!</h2>
+        <p>We are an ACM@UIUC Special Interest Group for robotics dedicated to fostering an environment where students can learn, experiment, and build all kinds of robots.</p>
+      
+        <p>We welcome students from all backgrounds and skill levels. Whether you're a seasoned programmer or just curious about robotics, there's a place for you in our club!</p>
+        <button className="button-primary">Join Our Discord</button>
       </section>
-      <section className="history">
-        <h2>Our History</h2>
-        <p>Founded in 2010, our club has grown from a small group of enthusiasts to a thriving community of over 100 members. We've participated in numerous competitions and have won several awards for our innovative designs and teamwork.</p>
-      </section>
-      <section className="activities">
-        <h2>What We Do</h2>
+      <br></br>
+      <section>
+        <h2 className="heading-subtitle-bold">What We Do</h2>
         <ul>
           <li>Weekly workshops and lectures on robotics topics</li>
           <li>Hands-on projects and build sessions</li>
-          <li>Participation in local and national robotics competitions</li>
-          <li>Outreach programs to introduce robotics to younger students</li>
+          <li>Speaker events and paper reading groups</li>
           <li>Collaboration with industry partners on cutting-edge projects</li>
         </ul>
       </section>
-      <section className="join">
-        <h2>Join Us</h2>
-        <p>We welcome students from all backgrounds and skill levels. Whether you're a seasoned programmer or just curious about robotics, there's a place for you in our club!</p>
-        <button className="join-button">Become a Member</button>
+      <br></br>
+      <section>
+        <h2 className="heading-subtitle-bold">Our Chairs</h2>
+        <p></p>
+        <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+          <div style={{textAlign: 'center'}}>
+            <img
+                src={bhargav}
+                alt="team members"
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                }}
+            />
+            <h5 style={{marginTop: '1px'}}>Bhargav Chandaka</h5>
+          </div>
+
+          <div style={{textAlign: 'center'}}>
+            <img
+                src={gloria}
+                alt="team members"
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                }}
+            />
+            <h5 style={{marginTop: '1px'}}>Gloria Wang</h5>
+          </div>
+        </div>
       </section>
     </div>
   );
