@@ -1,13 +1,13 @@
 .layout-sm {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .layout-md {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .layout-lg {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .layout-xl {
