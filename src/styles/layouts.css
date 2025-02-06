@@ -41,3 +41,11 @@
     border-radius: 1rem;
     overflow: hidden;
 }
+
+.layout-box {
+    background-color: var(--primary-theme-color);
+    color: var(--primary-white-color);
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+}

@@ -11,9 +11,8 @@ const About: React.FC = () => {
       <h1 className="heading-title">About</h1>
       <section>
         <h2 className="heading-subtitle-bold">Welcome to SIGRobotics!</h2>
-        <p>We are an ACM@UIUC Special Interest Group for robotics dedicated to fostering an environment where students can learn, experiment, and build all kinds of robots.</p>
-      
-        <p>We welcome students from all backgrounds and skill levels. Whether you're a seasoned programmer or just curious about robotics, there's a place for you in our club!</p>
+        <p>We are an ACM@UIUC Special Interest Group for robotics dedicated to fostering an environment where students can learn, experiment, and build all kinds of robots. 
+          We welcome students from all backgrounds and skill levels. Whether you're a seasoned programmer or just curious about robotics, there's a place for you in our club!</p>
         <button className="button-primary">Join Our Discord</button>
       </section>
       <br></br>
