@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 20px;
   }
-  
+   
   .projects h1 {
     color: #333;
     text-align: center;
@@ -15,18 +15,18 @@
   }
   
   .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
   }
   
   .project-item {
-    width: 30%;
-    margin-bottom: 40px;
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
   .project-image {
@@ -35,6 +35,7 @@
     border-radius: 8px;
     margin-bottom: 15px;
   }
+  
   
   .project-item h3 {
     margin-top: 0;

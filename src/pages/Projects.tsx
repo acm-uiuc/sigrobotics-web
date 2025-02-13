@@ -27,7 +27,6 @@ const projects: Project[] = [
     image: "/api/placeholder/300/200",
     status: "Ongoing"
   }
-  // Add more projects as needed
 ];
 
 const Projects: React.FC = () => {
