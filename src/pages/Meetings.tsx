@@ -22,6 +22,11 @@ const sp25: Meeting[] = [
       {type: "slides", link: "https://docs.google.com/presentation/d/1dtGuj1q1uO8wdr6FZLxzAh77IQDhmHhxI-hjjub0eQo/edit#slide=id.g3176b23e2f2_0_219"},
       {type: "code", link: "https://github.com/SIGRobotics-UIUC/mujoco-tutorial"}
     ] },
+  { date: '02/12/2025', topic: 'Hardware: Wheels & Drive', 
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/19MKd18vV81n01lx9o5e6ZMqhpIm6HYFsRUGzxj5kcJI/edit#slide=id.g3042e88b18b_0_1"},
+      {type: "code", link: "https://github.com/SIGRobotics-UIUC/mujoco-tutorial"}
+    ] },
   // { date: '', topic: '', 
   //   resources: [
   //     {type: "slides", link: ""},
