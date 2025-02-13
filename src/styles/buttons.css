@@ -16,13 +16,17 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 0.5rem;
 }
 
 .button-primary:hover {
     background: var(--primary-theme-color-hover);
     color: var(--primary-white-color);
+    text-decoration: none;
 }
 
 .button-primary-disabled {
@@ -34,7 +38,10 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
     margin: 4px 2px;
 }
 
@@ -46,10 +53,14 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 0.5rem;
 }
 
 .button-secondary:hover {
   background: var(--primary-dim-color);
+  text-decoration: none;
 }

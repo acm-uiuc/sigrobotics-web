@@ -1,13 +1,13 @@
 .layout-sm {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .layout-md {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .layout-lg {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .layout-xl {
@@ -40,4 +40,12 @@
     height: 500px;
     border-radius: 1rem;
     overflow: hidden;
+}
+
+.layout-box {
+    background-color: var(--primary-theme-color);
+    color: var(--primary-white-color);
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 4rem;
 }

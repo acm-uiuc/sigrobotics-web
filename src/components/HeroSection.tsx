@@ -32,7 +32,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                             rel="noopener noreferrer" 
                             className="button-secondary"
                         >
-                            Join Our Discord
+                            Join Discord
                         </a>
                         <Link to="/about" className="button-primary">
                             Learn More

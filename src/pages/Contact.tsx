@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import { FaDiscord, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
@@ -18,18 +19,45 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact">
-      <h1>Contact Us</h1>
-      <p className="contact-intro">Have questions or want to get involved? Reach out to us!</p>
+    <div className="layout-xl">
+      <h1 className="heading-title">Contact Us</h1>
+      <p>Have questions or want to get involved? Reach out to us!</p>
+      <br></br>
+      <div className="layout-box">
+        <h2 className="heading-subtitle-bold">SIGRobotics Contact</h2>
+        <p><b>Email:</b> sigrobotics@acm.illinois.edu</p>
+        <p><b>Address:</b> 201 N Goodwin Ave, Urbana, IL 61801</p>
       
-      <div className="contact-info">
-        <h2>Club Information</h2>
-        <p>Email: sigrobotics@acm.illinois.edu</p>
-        <p>Address: 201 N Goodwin Ave, Urbana, IL 61801</p>
+        <div className="social-links">
+        <a 
+          href="https://discord.gg/xBNhspqwSc" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Discord"
+        >
+          <FaDiscord />
+        </a>
+        <a 
+          href="https://x.com/sigrobotics" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <FaTwitter />
+        </a>
+        <a 
+          href="https://github.com/SIGRobotics-UIUC" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FaGithub />
+        </a>
+      </div>
       </div>
       
       <form className="contact-form" onSubmit={handleSubmit}>
-        <h2>Send us a message!</h2>
+        <h2 className="heading-subtitle-bold">Send us a message!</h2>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
@@ -59,7 +87,7 @@ const Contact: React.FC = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="submit-button">Send Message</button>
+        <button type="submit" className="button-primary">Send Message</button>
       </form>
     </div>
   );

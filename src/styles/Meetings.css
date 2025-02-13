@@ -10,14 +10,15 @@
   .meeting-schedule {
     width: 100%;
     border-collapse: collapse;
+    margin: 0.5rem;
   }
   
   .meeting-schedule th, .meeting-schedule td {
-    border: 1px solid #ddd;
+    border: 1px solid var(--secondary-theme-color-dark);
     padding: 8px;
     text-align: left;
   }
   
   .meeting-schedule th {
-    background-color: #f2f2f2;
+    background-color: var(--primary-dim-color);
   }
