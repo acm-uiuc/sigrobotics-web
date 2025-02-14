@@ -13,7 +13,16 @@ const About: React.FC = () => {
         <h2 className="heading-subtitle-bold">Welcome to SIGRobotics!</h2>
         <p>We are an ACM@UIUC Special Interest Group for robotics dedicated to fostering an environment where students can learn, experiment, and build all kinds of robots. 
           We welcome students from all backgrounds and skill levels. Whether you're a seasoned programmer or just curious about robotics, there's a place for you in our club!</p>
-        <button className="button-primary">Join Our Discord</button>
+        <div className="hero-buttons">
+            <a 
+                href="https://discord.gg/d6MXagJTb8"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="button-primary"
+            >
+                Join Discord
+            </a>
+        </div>
       </section>
       <br></br>
       <section>

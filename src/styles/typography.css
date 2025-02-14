@@ -24,6 +24,18 @@
     margin: 0.5rem;
 }
 
+.heading-md {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem;
+}
+
+.heading-md-bold {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
 .heading-small {
     font-size: 1rem;
     font-weight: 600;

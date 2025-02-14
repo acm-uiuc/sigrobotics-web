@@ -46,7 +46,7 @@
 }
 
 .button-secondary {
-    background: transparent;
+    background: var(--primary-white-color);
     color: var(--primary-theme-color);
     cursor: pointer;
     border: 2px solid var(--primary-black-color);
