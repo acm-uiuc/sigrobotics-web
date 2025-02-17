@@ -35,7 +35,7 @@
 
 .project-status.ongoing {
   background-color: var(--tertiary-theme-color);
-  color: var(--primary-black-color);
+  color: var(--primary-white-color);
 }
 
 .project-status.completed {

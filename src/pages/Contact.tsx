@@ -9,8 +9,15 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send this data to a server
-    console.log('Form submitted:', { name, email, message });
+
+    // send msg via email client
+    const mailto = `mailto:sigrobotics@acm.illinois.edu?subject=Contact Form Submission 
+      ${encodeURIComponent(name)}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`
+      )}`;
+    
+    window.location.href = mailto
+    
     // Reset form fields
     setName('');
     setEmail('');
