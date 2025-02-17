@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6084432.css",
+    "main.js": "/static/js/main.6e3110d2.js",
+    "static/js/453.0b834c22.chunk.js": "/static/js/453.0b834c22.chunk.js",
+    "static/media/open_house.png": "/static/media/open_house.b3595f22ea498119639a.png",
+    "static/media/tb3.png": "/static/media/tb3.88e3dfdf9634a501c81b.png",
+    "static/media/bhargav.jpg": "/static/media/bhargav.5efa5799b49245cdbd17.jpg",
+    "static/media/arm.png": "/static/media/arm.47c10359f3a424936f38.png",
+    "static/media/stompy.jpg": "/static/media/stompy.cf5935a7ccb389c16f70.jpg",
+    "static/media/gloria.jpg": "/static/media/gloria.da89dd0dfe3b6a0792be.jpg",
+    "index.html": "/index.html",
+    "main.e6084432.css.map": "/static/css/main.e6084432.css.map",
+    "main.6e3110d2.js.map": "/static/js/main.6e3110d2.js.map",
+    "453.0b834c22.chunk.js.map": "/static/js/453.0b834c22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6084432.css",
+    "static/js/main.6e3110d2.js"
+  ]
+}
