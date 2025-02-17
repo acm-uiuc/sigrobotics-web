@@ -1,0 +1,52 @@
+:root {
+    --primary-theme-color: #4254BC;
+    --primary-theme-color-dark: #bbc3ff;
+    --primary-theme-color-light: #525a92;
+
+    --primary-theme-color-hover: #4b5ec6;
+  
+    --secondary-theme-color: #8C8FAA;
+    --secondary-theme-color-dark: #c3c5dd;
+    --secondary-theme-color-light: #5b5d72;
+
+    --tertiary-theme-color: #B282A4;
+    --tertiary-theme-color-dark: #77536d;
+    --tertiary-theme-color-light: #e6bad7;
+  
+    --primary-white-color: #fdfbff;
+    --primary-dim-color: #efedf4;
+    --primary-shadow-color: #393d4a;
+    --primary-black-color: #121318;
+    --primary-error-color: #FF5449;
+  }
+
+  .primary-background {
+    background: var(--primary-theme-color);
+  }
+  .primary-background-dark {
+    background: var(--primary-theme-color-dark);
+  }
+  .primary-background-disabled {
+    background: var(--primary-theme-color-light);
+  }
+  .primary-background-hover {
+    background: var(--primary-theme-color-hover);
+  }
+
+  .secondary-background {
+    background: var(--secondary-theme-color);
+  }
+  .secondary-background-dark {
+    background: var(--secondary-theme-color-dark);
+  }
+  .secondary-background-disabled {
+    background: var(--secondary-theme-color-light);
+  }
+
+.heading-primary {
+  color: var(--primary-black-color)
+}
+
+.error-primary {
+  color: var(--primary-error-color)
+}

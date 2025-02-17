@@ -1,0 +1,59 @@
+.layout-sm {
+    padding: 1rem 0;
+}
+
+.layout-md {
+    padding: 1.5rem 0;
+}
+
+.layout-lg {
+    padding: 2rem 0;
+}
+
+.layout-xl {
+    padding: 4rem;
+}
+
+.layout-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.layout-gap-sm {
+    margin-bottom: 2rem;
+}
+
+.layout-gap-md {
+    margin-bottom: 4rem;
+}
+
+.layout-gap-lg {
+    margin-bottom: 6rem;
+}
+
+
+.layout-img {
+    width: 100%;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.layout-box {
+    background-color: var(--primary-theme-color);
+    color: var(--primary-white-color);
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+}
+
+.layout-box-white {
+    background-color: var(--primary-dim-color);
+    color: var(--primary-black-color);
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+}

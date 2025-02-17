@@ -1,0 +1,23 @@
+.contact-form {
+  background-color: var(--primary-dim-color);
+  border-radius: 8px;
+  color: var(--primary-black-color);
+  padding: 2rem 2rem;
+  margin-bottom: 4rem;
+}
+
+.social-links {
+  margin: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-white-color);
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--secondary-theme-color);
+}

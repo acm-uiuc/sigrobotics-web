@@ -1,0 +1,32 @@
+.sponsor-intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sponsor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.sponsor-item {
+  background-color: var(--primary-dim-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px var(--primary-dim-color);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sponsor-item:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.sponsor-logo {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
