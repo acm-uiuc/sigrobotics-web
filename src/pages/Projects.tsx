@@ -16,7 +16,7 @@ const projects: Project[] = [
   {
     title: "LeKiwi",
     description: "An open-source, low-cost mobile-manipulator.\n A SIGRobotics x Huggingface LeRobot collaboration.",
-    image: "https://github.com/SIGRobotics-UIUC/LeKiwi/raw/main/media/lekiwi.png",
+    image: "https://github.com/SIGRobotics-UIUC/LeKiwi/raw/main/media/lekiwi_real.jpg",
     link: "https://github.com/SIGRobotics-UIUC/LeKiwi?tab=readme-ov-file",
     status: "Ongoing"
   },
