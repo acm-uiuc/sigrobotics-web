@@ -43,7 +43,7 @@ const Sponsors: React.FC = () => {
         </a>
       </section>
       <h2 className="heading-subtitle-bold">Thank You!</h2>
-      <p>We are grateful for the support of our sponsors who make our projects and competitions possible.</p>
+      <p>We are grateful for the support of our sponsors who make our projects possible.</p>
       <br></br>
       <div className="sponsor-list">
         {sponsors.map((sponsor, index) => (
