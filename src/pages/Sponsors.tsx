@@ -9,6 +9,11 @@ interface Sponsor {
 
 const sponsors: Sponsor[] = [
   {
+    name: "ROBOTIS",
+    logo: "https://emanual.robotis.com/assets/images/platform/turtlebot3/logo_robotis.png",
+    link: "https://en.robotis.com/",
+  },
+  {
     name: "Hugging Face LeRobot",
     logo: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
     link: "https://huggingface.com/",
@@ -20,7 +25,7 @@ const sponsors: Sponsor[] = [
   },
   {
     name: "UIUC CDS",
-    logo: "https://pbs.twimg.com/profile_images/1820548762588135425/btfn2u9P_400x400.jpg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFPvnocn_MP38oUknIq1DZI8-7HkYHQ2hAbQ&s",
     link: "https://siebelschool.illinois.edu/",
   },
   // Add more sponsors as needed

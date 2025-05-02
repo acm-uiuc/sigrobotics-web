@@ -29,6 +29,12 @@
   text-decoration: none;
 }
 
+.navbar-logo-image {
+  height: 70px; /* Adjust size as needed */
+  width: auto;
+  margin-right: 5px; /* Space between logo and text */
+}
+
 .hamburger {
   display: none;
   flex-direction: column;

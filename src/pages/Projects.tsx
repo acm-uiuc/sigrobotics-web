@@ -51,26 +51,30 @@ const Projects: React.FC = () => {
       <div className="project-list">
         {projects.map((project, index) => (
           <div key={index} className="project-item">
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <img
-                src={project.image}
-                alt="team members"
-                className="project-image"
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            {/* <img src={project.image} alt={project.title} className="project-image" /> */}
-            <h3 className="heading-md-bold">{project.title}</h3>
-            <p>{project.description}</p>
-            <br></br>
-            <span className={`project-status ${project.status.toLowerCase()}`}>{project.status}</span>
+            <div className="project-image-container">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%', height: '100%' }}>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.03)';
+                    e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+                  }}
+                />
+              </a>
+            </div>
+            <div className="project-content">
+              <h3 className="heading-md-bold">{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+            <div className="project-status-container">
+              <span className={`project-status ${project.status.toLowerCase()}`}>{project.status}</span>
+            </div>
           </div>
         ))}
       </div>
@@ -79,10 +83,10 @@ const Projects: React.FC = () => {
         <h2 className="heading-subtitle-bold">Have a Project Idea?</h2>
         <p>We're always looking for new and exciting projects. If you have an idea, we'd love to hear about it!</p>
         <div className="hero-buttons">
-            <a 
+            <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeFxRTifmNDY1QKDFgNkLE7fB7AYqTGxoEYzLcVvsLNg6T20A/viewform?usp=header"
-                target="_blank" 
-                rel="noopener noreferrer" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="button-secondary"
             >
                 Propose a Project

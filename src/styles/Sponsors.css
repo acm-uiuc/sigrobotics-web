@@ -17,6 +17,10 @@
   box-shadow: 0 2px 5px var(--primary-dim-color);
   text-align: center;
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally in flex container */
+  justify-content: center; /* Centers items vertically in flex container */
 }
 
 .sponsor-item:hover {
@@ -25,8 +29,13 @@
 }
 
 .sponsor-logo {
-  max-width: 120px;
+  max-width: 200px;
+  max-height: 120px;
   height: auto;
   margin-bottom: 15px;
   border-radius: 5px;
+  display: block; /* Makes image a block element */
+  margin-left: auto; /* Auto margins on left and right will center the image */
+  margin-right: auto;
+  object-fit: contain; /* Ensures the logo maintains its aspect ratio */
 }

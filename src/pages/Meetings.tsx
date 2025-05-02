@@ -27,6 +27,24 @@ const sp25: Meeting[] = [
       {type: "slides", link: "https://docs.google.com/presentation/d/19MKd18vV81n01lx9o5e6ZMqhpIm6HYFsRUGzxj5kcJI/edit#slide=id.g3042e88b18b_0_1"},
       {type: "code", link: "https://github.com/SIGRobotics-UIUC/mujoco-tutorial"}
     ] },
+  { date: '02/19/2025', topic: 'Pose and Coordinate Frames', 
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1gQmzEhVNXKojIF5VDBNTez28WQMZHL8fVRPQ6nVaNe8/edit#slide=id.g3042e88b18b_0_1"},
+    ] },
+  { date: '02/26/2025', topic: 'Color Space, Convolutions, & Image Filters', 
+  resources: [
+    {type: "slides", link: "https://docs.google.com/presentation/d/1usjsmYJrFgOdpj00n6q1asGeDfxnsJnOMicZYeV5J5c/edit#slide=id.g3042e88b18b_0_1"},
+    {type: "code", link: "https://github.com/SIGRobotics-UIUC/image_filters/tree/main"}
+  ] },
+  { date: '03/05/2025', topic: 'Intro to Deep Learning', 
+  resources: [
+    {type: "slides", link: "https://docs.google.com/presentation/d/1EMNG_Klj09sia6wKPTzDC4YqWXp7Eqs6Mx1fDytpExs/edit#slide=id.g3042e88b18b_0_1"},
+    {type: "code", link: "https://colab.research.google.com/drive/14J43qe3sXpsUaEnMAtZLYV8gfgoJPWFm?usp=sharing"}
+  ] },
+  { date: '04/16/2025', topic: 'Sensors and SLAM', 
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/11z1wewL8PcIX6G--HiXj6dLAWS9ETcUcaHkt2SBc3xE/edit#slide=id.g3042e88b18b_0_1"},
+  ] },
   // { date: '', topic: '', 
   //   resources: [
   //     {type: "slides", link: ""},
@@ -88,7 +106,7 @@ const Meetings: React.FC = () => {
       <div>
         <h2 className="heading-subtitle-bold">When & Where</h2>
         <p><b>General Meeting:</b> Thursdays, 6-7 PM | Siebel 1304</p>
-        <p><b>Project Meeting:</b> Sundays, 2-3 PM | Siebel 1304</p>
+        <p><b>Project Meeting:</b> Sundays, 2-3 PM | Siebel 0220</p>
       </div>
       <div className="layout-md">
         <h2 className="heading-subtitle-bold">Spring 2025</h2>
