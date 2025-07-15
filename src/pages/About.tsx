@@ -40,6 +40,87 @@ const About: React.FC = () => {
         <p></p>
         <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '2rem' }}>
           <div style={{textAlign: 'center'}}>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img
+                // src={}
+                alt="team members"
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.03)';
+                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+                }}
+              />
+            </a>
+            <h5 style={{marginTop: '1px'}}>Manav Chandaka</h5>
+          </div>
+
+          <div style={{textAlign: 'center'}}>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img
+                // src={}
+                alt="team members"
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.03)';
+                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+                }}
+              />
+            </a>
+            <h5 style={{marginTop: '1px'}}>Reid Faistl</h5>
+          </div>
+
+          <div style={{textAlign: 'center'}}>
+            <a href="https://advaitpatel.com" target="_blank" rel="noopener noreferrer">
+              <img
+                // src={}
+                alt="team members"
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.03)';
+                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+                }}
+              />
+            </a>
+            <h5 style={{marginTop: '1px'}}>Saketh Kantipudi</h5>
+          </div>
+        </div>
+      </section>
+      <br></br>
+      <section>
+        <h2 className="heading-subtitle-bold">Founders & Consultants</h2>
+        <p></p>
+        <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '2rem' }}>
+          <div style={{textAlign: 'center'}}>
             <a href="https://bchandaka.github.io/" target="_blank" rel="noopener noreferrer">
               <img
                 src={bhargav}

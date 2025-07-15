@@ -9,8 +9,13 @@ interface Sponsor {
 
 const sponsors: Sponsor[] = [
   {
+    name: "FrodoBots",
+    logo: "https://cdn.prod.website-files.com/66042185882fa3428f4dd6f1/662bee5b5ef7ed094186a56a_frodobots_ai_logo.png",
+    link: "https://www.frodobots.ai/",
+  },
+  {
     name: "ROBOTIS",
-    logo: "https://emanual.robotis.com/assets/images/platform/turtlebot3/logo_robotis.png",
+    logo: "https://en.robotis.com/renewal/img/main/main_logo.png",
     link: "https://en.robotis.com/",
   },
   {
@@ -24,7 +29,7 @@ const sponsors: Sponsor[] = [
     link: "https://www.kscale.dev/",
   },
   {
-    name: "UIUC CDS",
+    name: "UIUC CS",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFPvnocn_MP38oUknIq1DZI8-7HkYHQ2hAbQ&s",
     link: "https://siebelschool.illinois.edu/",
   },
