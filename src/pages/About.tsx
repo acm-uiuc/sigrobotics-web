@@ -4,6 +4,7 @@ import '../styles/style.css';
 import bhargav from '../assets/exec/bhargav.jpg';
 import gloria from '../assets/exec/gloria.jpg';
 import advait from '../assets/exec/advait.jpg'
+// TODO: add image to ../assets/exec/name.jpg and import here
 
 const About: React.FC = () => {
   return (
