@@ -43,7 +43,7 @@ const About: React.FC = () => {
           <div style={{textAlign: 'center'}}>
             <a href="" target="_blank" rel="noopener noreferrer">
               <img
-                // src={}
+                src={"https://media.licdn.com/dms/image/v2/D5603AQEETFQfjDxTLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725848835082?e=1755734400&v=beta&t=luHSHKAxxVZU1hgV6MTAUWbvlGP5Rj3l2teRNpmEJGI"}
                 alt="team members"
                 style={{
                   width: '200px',
@@ -68,7 +68,7 @@ const About: React.FC = () => {
           <div style={{textAlign: 'center'}}>
             <a href="" target="_blank" rel="noopener noreferrer">
               <img
-                // src={}
+                src={"https://media.licdn.com/dms/image/v2/D4E03AQHdR1Vl1ck50Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1704406369721?e=1755734400&v=beta&t=pq6jZqcuylSls7wz29-yILkg2ZuLHSG887i-paZjgUU"}
                 alt="team members"
                 style={{
                   width: '200px',
@@ -91,9 +91,9 @@ const About: React.FC = () => {
           </div>
 
           <div style={{textAlign: 'center'}}>
-            <a href="https://advaitpatel.com" target="_blank" rel="noopener noreferrer">
+            <a href="" target="_blank" rel="noopener noreferrer">
               <img
-                // src={}
+                src={"https://media.licdn.com/dms/image/v2/D4D03AQGmHUkcEL5yXQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726537823056?e=1755734400&v=beta&t=LmOs__0nUXh85eHU4Wg8flkDZS0BBLYk9JeglUKnMhA"}
                 alt="team members"
                 style={{
                   width: '200px',
