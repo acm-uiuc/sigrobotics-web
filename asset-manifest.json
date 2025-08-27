@@ -1,22 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.c3e04e6b.css",
-    "main.js": "/static/js/main.d18a9e81.js",
+    "main.js": "/static/js/main.0ac89eb2.js",
     "static/js/453.0b834c22.chunk.js": "/static/js/453.0b834c22.chunk.js",
     "static/media/open_house.png": "/static/media/open_house.b3595f22ea498119639a.png",
+    "static/media/henry.jpg": "/static/media/henry.a1412f3286fd3d4c705a.jpg",
     "static/media/tb3.png": "/static/media/tb3.88e3dfdf9634a501c81b.png",
     "static/media/bhargav.jpg": "/static/media/bhargav.5efa5799b49245cdbd17.jpg",
     "static/media/arm.png": "/static/media/arm.47c10359f3a424936f38.png",
     "static/media/stompy.jpg": "/static/media/stompy.cf5935a7ccb389c16f70.jpg",
     "static/media/gloria.jpg": "/static/media/gloria.9046ac7833272246496b.jpg",
     "static/media/logo.png": "/static/media/logo.c4794158c9364db6752b.png",
+    "static/media/reid.jpg": "/static/media/reid.8dfaf50351e52752afe9.jpg",
+    "static/media/manav.jpg": "/static/media/manav.f455dd70a1298aaf04a5.jpg",
+    "static/media/saketh.jpg": "/static/media/saketh.26dd637647ffa77a7556.jpg",
     "index.html": "/index.html",
     "main.c3e04e6b.css.map": "/static/css/main.c3e04e6b.css.map",
-    "main.d18a9e81.js.map": "/static/js/main.d18a9e81.js.map",
+    "main.0ac89eb2.js.map": "/static/js/main.0ac89eb2.js.map",
     "453.0b834c22.chunk.js.map": "/static/js/453.0b834c22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3e04e6b.css",
-    "static/js/main.d18a9e81.js"
+    "static/js/main.0ac89eb2.js"
   ]
 }
