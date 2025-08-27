@@ -12,6 +12,19 @@ interface Meeting {
   resources: Resource[];
 }
 
+const fa25: Meeting[] = [
+  { date: '08/30/2025', topic: 'Semester Planning', 
+    resources: [
+      {type: "slides", link: ""},
+    ] },
+  // { date: '', topic: '', 
+  //   resources: [
+  //     {type: "slides", link: ""},
+  //     {type: "code", link: ""}
+  //   ] },
+  // Add more meetings...
+];
+
 const sp25: Meeting[] = [
   { date: '01/29/2025', topic: 'Semester Planning', 
     resources: [
@@ -105,9 +118,39 @@ const Meetings: React.FC = () => {
       <h1 className="heading-title">Meetings</h1>
       <div>
         <h2 className="heading-subtitle-bold">When & Where</h2>
-        <p><b>General Meeting:</b> Thursdays, 6-7 PM | Siebel 1304</p>
-        <p><b>Project Meeting:</b> Sundays, 2-3 PM | Siebel 0220</p>
+        <p><b>General Meeting:</b> Tuesdays, 7-8 PM | Siebel 2405</p>
+        <p><b>Project Meeting:</b> Saturdays, 1-3 PM | Siebel 2405</p>
       </div>
+
+      <div className="layout-md">
+        <h2 className="heading-subtitle-bold">Fall 2025</h2>
+        <table className="meeting-schedule">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Topic</th>
+              <th>Resources</th>
+            </tr>
+          </thead>
+          <tbody>
+            {fa25.map((meeting, index) => (
+              <tr key={index}>
+                <td>{meeting.date}</td>
+                <td>{meeting.topic}</td>
+                <td>{meeting.resources.map((resource, index) => (
+                  <span key={index}>
+                    <a href={resource.link} target="_blank" rel="noopener noreferrer">
+                      {"["+resource.type+"]"}
+                    </a>
+                    {index < meeting.resources.length - 1 ? ', ' : ''}
+                  </span>
+                ))}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
       <div className="layout-md">
         <h2 className="heading-subtitle-bold">Spring 2025</h2>
         <table className="meeting-schedule">
