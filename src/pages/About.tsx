@@ -3,7 +3,11 @@ import React from 'react';
 import '../styles/style.css';
 import bhargav from '../assets/exec/bhargav.jpg';
 import gloria from '../assets/exec/gloria.jpg';
-import advait from '../assets/exec/advait.jpg'
+import advait from '../assets/exec/advait.jpg';
+import reid from '../assets/exec/reid.jpg';
+import manav from '../assets/exec/manav.jpg';
+import saketh from '../assets/exec/saketh.jpg';
+import henry from '../assets/exec/henry.jpg';
 // TODO: add image to ../assets/exec/name.jpg and import here
 
 const About: React.FC = () => {
@@ -43,7 +47,7 @@ const About: React.FC = () => {
           <div style={{textAlign: 'center'}}>
             <a href="" target="_blank" rel="noopener noreferrer">
               <img
-                src={"https://media.licdn.com/dms/image/v2/D5603AQEETFQfjDxTLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725848835082?e=1755734400&v=beta&t=luHSHKAxxVZU1hgV6MTAUWbvlGP5Rj3l2teRNpmEJGI"}
+                src={manav}
                 alt="team members"
                 style={{
                   width: '200px',
@@ -68,7 +72,7 @@ const About: React.FC = () => {
           <div style={{textAlign: 'center'}}>
             <a href="" target="_blank" rel="noopener noreferrer">
               <img
-                src={"https://media.licdn.com/dms/image/v2/D4E03AQHdR1Vl1ck50Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1704406369721?e=1755734400&v=beta&t=pq6jZqcuylSls7wz29-yILkg2ZuLHSG887i-paZjgUU"}
+                src={reid}
                 alt="team members"
                 style={{
                   width: '200px',
@@ -93,7 +97,7 @@ const About: React.FC = () => {
           <div style={{textAlign: 'center'}}>
             <a href="" target="_blank" rel="noopener noreferrer">
               <img
-                src={"https://media.licdn.com/dms/image/v2/D4D03AQGmHUkcEL5yXQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726537823056?e=1755734400&v=beta&t=LmOs__0nUXh85eHU4Wg8flkDZS0BBLYk9JeglUKnMhA"}
+                src={saketh}
                 alt="team members"
                 style={{
                   width: '200px',
@@ -118,7 +122,7 @@ const About: React.FC = () => {
       </section>
       <br></br>
       <section>
-        <h2 className="heading-subtitle-bold">Founders & Consultants</h2>
+        <h2 className="heading-subtitle-bold">Founders</h2>
         <p></p>
         <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '2rem' }}>
           <div style={{textAlign: 'center'}}>
@@ -195,7 +199,50 @@ const About: React.FC = () => {
             </a>
             <h5 style={{marginTop: '1px'}}>Advait Patel</h5>
           </div>
+
+          <div style={{textAlign: 'center'}}>
+            <a href="https://hungdche.github.io/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={henry}
+                alt="team members"
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.03)';
+                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+                }}
+              />
+            </a>
+            <h5 style={{marginTop: '1px'}}>Henry Che</h5>
+          </div>
+
         </div>
+      </section>
+
+      <br></br>
+      <section>
+        <h2 className="heading-subtitle-bold">Where We've Been</h2>
+        <ul>
+          <li>Amazon Robotics</li>
+          <li>Anduril</li>
+          <li>DYNA Robotics</li>
+          <li>General Biological</li>
+          <li>General Motors</li>
+          <li>NASA</li>
+          <li>SceniX</li>
+          <li>Slip Robotics</li>
+          <li>Waabi</li>
+          <li>Zoox</li>
+        </ul>
       </section>
     </div>
   );
