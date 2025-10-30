@@ -5,9 +5,20 @@
 
 .sponsor-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Big sponsors grid - fewer columns, more space */
+.sponsor-list-big {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Normal sponsors grid - standard layout */
+.sponsor-list-normal {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .sponsor-item {
@@ -19,8 +30,13 @@
   transition: transform 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers items horizontally in flex container */
-  justify-content: center; /* Centers items vertically in flex container */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Big sponsor items - more padding and space */
+.sponsor-item-big {
+  padding: 30px;
 }
 
 .sponsor-item:hover {
@@ -29,13 +45,23 @@
 }
 
 .sponsor-logo {
-  max-width: 200px;
-  max-height: 120px;
   height: auto;
   margin-bottom: 15px;
   border-radius: 5px;
-  display: block; /* Makes image a block element */
-  margin-left: auto; /* Auto margins on left and right will center the image */
+  display: block;
+  margin-left: auto;
   margin-right: auto;
-  object-fit: contain; /* Ensures the logo maintains its aspect ratio */
+  object-fit: contain;
+}
+
+/* Big sponsor logos - larger size */
+.sponsor-logo-big {
+  max-width: 300px;
+  max-height: 180px;
+}
+
+/* Normal sponsor logos - standard size */
+.sponsor-logo-normal {
+  max-width: 200px;
+  max-height: 120px;
 }

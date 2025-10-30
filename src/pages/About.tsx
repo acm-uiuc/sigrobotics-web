@@ -8,6 +8,7 @@ import reid from '../assets/exec/reid.jpg';
 import manav from '../assets/exec/manav.jpg';
 import saketh from '../assets/exec/saketh.jpg';
 import henry from '../assets/exec/henry.jpg';
+import leo from '../assets/exec/leo.jpg';
 // TODO: add image to ../assets/exec/name.jpg and import here
 
 const About: React.FC = () => {
@@ -45,7 +46,7 @@ const About: React.FC = () => {
         <p></p>
         <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '2rem' }}>
           <div style={{textAlign: 'center'}}>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/manavchandaka/" target="_blank" rel="noopener noreferrer">
               <img
                 src={manav}
                 alt="team members"
@@ -70,7 +71,7 @@ const About: React.FC = () => {
           </div>
 
           <div style={{textAlign: 'center'}}>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/reid-faistl-8165412a7/" target="_blank" rel="noopener noreferrer">
               <img
                 src={reid}
                 alt="team members"
@@ -95,7 +96,7 @@ const About: React.FC = () => {
           </div>
 
           <div style={{textAlign: 'center'}}>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/saketh-kantipudi/" target="_blank" rel="noopener noreferrer">
               <img
                 src={saketh}
                 alt="team members"
@@ -118,6 +119,32 @@ const About: React.FC = () => {
             </a>
             <h5 style={{marginTop: '1px'}}>Saketh Kantipudi</h5>
           </div>
+
+          <div style={{textAlign: 'center'}}>
+            <a href="https://www.leo-lin.com/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={leo}
+                alt="team members"
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.03)';
+                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+                }}
+              />
+            </a>
+            <h5 style={{marginTop: '1px'}}>Leo Lin</h5>
+          </div>
+
         </div>
       </section>
       <br></br>
