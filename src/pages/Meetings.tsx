@@ -12,10 +12,14 @@ interface Meeting {
   resources: Resource[];
 }
 
-const fa25: Meeting[] = [
-  { date: '08/30/2025', topic: 'Semester Planning', 
+const sp26: Meeting[] = [
+  { date: '01/27/2026', topic: 'Semester Planning', 
     resources: [
-      {type: "slides", link: ""},
+      {type: "slides", link: "https://docs.google.com/presentation/d/1od6GCKpglS3Tz92DGrVOZyeAOICjU9RFCcElmb4VePY/edit"},
+    ] },
+  { date: '01/27/2026', topic: 'Pose and Coordinate Frames',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1_A7KlO1l7nkaIzwfFUKeIyLa8NTt2WNPBtr8jSUmCo0/edit"},
     ] },
   // { date: '', topic: '', 
   //   resources: [
@@ -118,12 +122,12 @@ const Meetings: React.FC = () => {
       <h1 className="heading-title">Meetings</h1>
       <div>
         <h2 className="heading-subtitle-bold">When & Where</h2>
-        <p><b>General Meeting:</b> Tuesdays, 7-8 PM | Siebel 2405</p>
+        <p><b>General Meeting:</b> Tuesdays, 7-8 PM | Siebel 1302</p>
         <p><b>Project Meeting:</b> Saturdays, 1-3 PM | Siebel 2405</p>
       </div>
 
       <div className="layout-md">
-        <h2 className="heading-subtitle-bold">Fall 2025</h2>
+        <h2 className="heading-subtitle-bold">Spring 2026</h2>
         <table className="meeting-schedule">
           <thead>
             <tr>
@@ -133,7 +137,7 @@ const Meetings: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {fa25.map((meeting, index) => (
+            {sp26.map((meeting, index) => (
               <tr key={index}>
                 <td>{meeting.date}</td>
                 <td>{meeting.topic}</td>

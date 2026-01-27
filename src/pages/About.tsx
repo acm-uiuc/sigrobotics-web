@@ -265,6 +265,7 @@ const About: React.FC = () => {
           <li>General Biological</li>
           <li>General Motors</li>
           <li>NASA</li>
+          <li>Nvidia</li>
           <li>SceniX</li>
           <li>Slip Robotics</li>
           <li>Waabi</li>
