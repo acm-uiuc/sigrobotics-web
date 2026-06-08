@@ -5,7 +5,7 @@
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
 }
@@ -61,5 +61,10 @@
 
 .project-status.completed {
   background-color: var(--primary-theme-color);
-  color: var(--primary-white-color);
+  color: var(--primary-white-color); 
+}
+
+.project-status.archived {
+  background-color: var(--secondary-theme-color);
+  color: var(--primary-white-color); 
 }

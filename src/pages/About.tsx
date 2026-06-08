@@ -1,275 +1,98 @@
 // pages/About.tsx
 import React from 'react';
 import '../styles/style.css';
-import bhargav from '../assets/exec/bhargav.jpg';
-import gloria from '../assets/exec/gloria.jpg';
-import advait from '../assets/exec/advait.jpg';
-import reid from '../assets/exec/reid.jpg';
-import manav from '../assets/exec/manav.jpg';
-import saketh from '../assets/exec/saketh.jpg';
-import henry from '../assets/exec/henry.jpg';
-import leo from '../assets/exec/leo.jpg';
-// TODO: add image to ../assets/exec/name.jpg and import here
+import { whatWeDo, chairs, retired, founders, companies } from '../data/aboutData';
+
+// Helper component for rendering team members to keep the code DRY (Don't Repeat Yourself)
+const TeamSection = ({ title, members }: { title: string, members: any[] }) => (
+  <section>
+    <h2 className="heading-subtitle-bold">{title}</h2>
+    <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '2rem' }}>
+      {members.map((member, index) => (
+        <div key={index} style={{ textAlign: 'center' }}>
+          <a href={member.link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={member.image}
+              alt={member.name}
+              style={{
+                width: '200px',
+                height: '200px',
+                objectFit: 'cover',
+                borderRadius: '10px',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease' // Added CSS transition for smoother hover
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.03)';
+                e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+              }}
+            />
+          </a>
+          <h5 style={{ marginTop: '1px' }}>{member.name}</h5>
+        </div>
+      ))}
+    </div>
+  </section>
+);
 
 const About: React.FC = () => {
   return (
     <div className="layout-xl">
       <h1 className="heading-title">About</h1>
+      
       <section>
         <h2 className="heading-subtitle-bold">Welcome to SIGRobotics!</h2>
-        <p>We are an ACM@UIUC Special Interest Group for robotics dedicated to fostering an environment where students can learn, experiment, and build all kinds of robots. 
-          We welcome students from all backgrounds and skill levels. Whether you're a seasoned programmer or just curious about robotics, there's a place for you in our club!</p>
+        <p>
+          We are an ACM@UIUC Special Interest Group for robotics dedicated to fostering an environment where students can learn, experiment, and build all kinds of robots. 
+          We welcome students from all backgrounds and skill levels. Whether you're a seasoned programmer or just curious about robotics, there's a place for you in our club!
+        </p>
         <div className="hero-buttons">
-            <a 
-                href="https://discord.gg/d6MXagJTb8"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="button-primary"
-            >
-                Join Discord
-            </a>
+          <a 
+            href="https://discord.gg/d6MXagJTb8"
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="button-primary"
+          >
+            Join Discord
+          </a>
         </div>
       </section>
-      <br></br>
+
+      <br />
+
       <section>
         <h2 className="heading-subtitle-bold">What We Do</h2>
         <ul>
-          <li>Weekly workshops and lectures on robotics topics</li>
-          <li>Hands-on projects and build sessions</li>
-          <li>Speaker events and paper reading groups</li>
-          <li>Collaboration with industry partners on cutting-edge projects</li>
+          {whatWeDo.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </section>
-      <br></br>
-      <section>
-        <h2 className="heading-subtitle-bold">Our Chairs</h2>
-        <p></p>
-        <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '2rem' }}>
-          <div style={{textAlign: 'center'}}>
-            <a href="https://www.linkedin.com/in/manavchandaka/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={manav}
-                alt="team members"
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '10px',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            <h5 style={{marginTop: '1px'}}>Manav Chandaka</h5>
-          </div>
 
-          <div style={{textAlign: 'center'}}>
-            <a href="https://www.linkedin.com/in/reid-faistl-8165412a7/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={reid}
-                alt="team members"
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '10px',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            <h5 style={{marginTop: '1px'}}>Reid Faistl</h5>
-          </div>
+      <br />
 
-          <div style={{textAlign: 'center'}}>
-            <a href="https://www.linkedin.com/in/saketh-kantipudi/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={saketh}
-                alt="team members"
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '10px',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            <h5 style={{marginTop: '1px'}}>Saketh Kantipudi</h5>
-          </div>
+      <TeamSection title="Our Chairs" members={chairs} />
 
-          <div style={{textAlign: 'center'}}>
-            <a href="https://www.leo-lin.com/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={leo}
-                alt="team members"
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '10px',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            <h5 style={{marginTop: '1px'}}>Leo Lin</h5>
-          </div>
+      <br />
+      
+      <TeamSection title="Retired Chairs" members={retired} />
+      
+      <br />
 
-        </div>
-      </section>
-      <br></br>
-      <section>
-        <h2 className="heading-subtitle-bold">Founders</h2>
-        <p></p>
-        <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '2rem' }}>
-          <div style={{textAlign: 'center'}}>
-            <a href="https://bchandaka.github.io/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={bhargav}
-                alt="team members"
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '10px',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            <h5 style={{marginTop: '1px'}}>Bhargav Chandaka</h5>
-          </div>
+      <TeamSection title="Founders" members={founders} />
 
-          <div style={{textAlign: 'center'}}>
-            <a href="https://gxywang.github.io/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={gloria}
-                alt="team members"
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '10px',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            <h5 style={{marginTop: '1px'}}>Gloria Wang</h5>
-          </div>
+      <br />
 
-          <div style={{textAlign: 'center'}}>
-            <a href="https://advaitpatel.com" target="_blank" rel="noopener noreferrer">
-              <img
-                src={advait}
-                alt="team members"
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '10px',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            <h5 style={{marginTop: '1px'}}>Advait Patel</h5>
-          </div>
-
-          <div style={{textAlign: 'center'}}>
-            <a href="https://hungdche.github.io/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={henry}
-                alt="team members"
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '10px',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              />
-            </a>
-            <h5 style={{marginTop: '1px'}}>Henry Che</h5>
-          </div>
-
-        </div>
-      </section>
-
-      <br></br>
       <section>
         <h2 className="heading-subtitle-bold">Where We've Been</h2>
         <ul>
-          <li>Amazon Robotics</li>
-          <li>Anduril</li>
-          <li>DYNA Robotics</li>
-          <li>General Biological</li>
-          <li>General Motors</li>
-          <li>NASA</li>
-          <li>Nvidia</li>
-          <li>SceniX</li>
-          <li>Slip Robotics</li>
-          <li>Waabi</li>
-          <li>Zoox</li>
+          {companies.map((company, index) => (
+            <li key={index}>{company}</li>
+          ))}
         </ul>
       </section>
     </div>
