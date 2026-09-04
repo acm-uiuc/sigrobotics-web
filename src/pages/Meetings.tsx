@@ -13,7 +13,7 @@ interface Meeting {
 }
 
 const sp26: Meeting[] = [
-  { date: '01/27/2026', topic: 'Semester Planning', 
+  { date: '01/24/2026', topic: 'Semester Planning', 
     resources: [
       {type: "slides", link: "https://docs.google.com/presentation/d/1od6GCKpglS3Tz92DGrVOZyeAOICjU9RFCcElmb4VePY/edit"},
     ] },
@@ -21,6 +21,10 @@ const sp26: Meeting[] = [
     resources: [
       {type: "slides", link: "https://docs.google.com/presentation/d/1_A7KlO1l7nkaIzwfFUKeIyLa8NTt2WNPBtr8jSUmCo0/edit"},
     ] },
+  { date: '02/03/2026', topic: 'Intro to Machine Learning',
+    resources: [
+      {type: "code", link: "https://colab.research.google.com/drive/14J43qe3sXpsUaEnMAtZLYV8gfgoJPWFm?usp=sharing"},
+    ] }
   // { date: '', topic: '', 
   //   resources: [
   //     {type: "slides", link: ""},
