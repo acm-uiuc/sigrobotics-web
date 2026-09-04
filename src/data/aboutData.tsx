@@ -21,6 +21,7 @@ import generalbiological from '../assets/companies/generalbiological.png';
 import gm from '../assets/companies/gm.png';
 import lightberry from '../assets/companies/lightberry.png';
 import meta from '../assets/companies/meta.png';
+import mindrobotics from '../assets/companies/mindrobotics.png';
 import nasa from '../assets/companies/nasa.png';
 import nvidia from '../assets/companies/nvidia.png';
 import saronic from '../assets/companies/saronic.png';
@@ -72,6 +73,7 @@ export const companies: Company[] = [
   { name: 'General Motors', logo: gm },
   { name: 'Lightberry', logo: lightberry },
   { name: 'Meta', logo: meta },
+  { name: 'Mind Robotics', logo: mindrobotics },
   { name: 'NASA', logo: nasa },
   { name: 'NVIDIA', logo: nvidia },
   { name: 'Saronic', logo: saronic },
