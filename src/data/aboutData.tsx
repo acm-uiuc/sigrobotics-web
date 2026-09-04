@@ -11,6 +11,8 @@ import leo from '../assets/exec/leo.jpg';
 import robert from '../assets/exec/robert.jpg';
 import keshav from '../assets/exec/keshav.jpg';
 import aarsh from '../assets/exec/aarsh.jpg';
+import gokul from '../assets/exec/gokul.jpg';
+import ewan from '../assets/exec/ewan.jpg';
 
 import amazon from '../assets/companies/amazon.png';
 import anduril from '../assets/companies/anduril.png';
@@ -41,6 +43,8 @@ export const chairs = [
   { name: 'Robert Molina', link: 'https://www.linkedin.com/in/rcmolina', image: robert },
   { name: 'Keshav Badrinath', link: 'https://keshavbadrinath.com', image: keshav },
   { name: 'Aarsh Mittal', link: '', image: aarsh },
+  { name: 'Gokul Balaji', link: '', image: gokul },
+  { name: 'Ewan McPhilliamy', link: '', image: ewan },
 ];
 
 export const retired = [
