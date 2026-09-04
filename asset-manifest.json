@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9aac1d39.css",
-    "main.js": "/static/js/main.8617425f.js",
+    "main.js": "/static/js/main.73ebf5e0.js",
     "static/js/453.0b834c22.chunk.js": "/static/js/453.0b834c22.chunk.js",
     "static/media/booster.jpg": "/static/media/booster.39af1b550b081fbd8795.jpg",
     "static/media/open_house.png": "/static/media/open_house.b3595f22ea498119639a.png",
@@ -14,13 +14,13 @@
     "static/media/craft.jpg": "/static/media/craft.55a0952a36c9ace146de.jpg",
     "static/media/nerf2physics.jpg": "/static/media/nerf2physics.792f22acf1afb23e1503.jpg",
     "static/media/gokul.jpg": "/static/media/gokul.28e55d68e4ee92751dc5.jpg",
-    "static/media/ewan.jpg": "/static/media/ewan.4cb0cb8946385d9e4daa.jpg",
     "static/media/reasonnav.jpg": "/static/media/reasonnav.d755ca61e4efd75b934d.jpg",
     "static/media/reid.jpg": "/static/media/reid.8dfaf50351e52752afe9.jpg",
     "static/media/aarsh.jpg": "/static/media/aarsh.fb29b853eecf3f288f1b.jpg",
     "static/media/manav.jpg": "/static/media/manav.f455dd70a1298aaf04a5.jpg",
     "static/media/saketh.jpg": "/static/media/saketh.26dd637647ffa77a7556.jpg",
     "static/media/matchabot.jpg": "/static/media/matchabot.af3218913c2855d6b6af.jpg",
+    "static/media/ewan.jpg": "/static/media/ewan.f1c5e97f1d0bac62550a.jpg",
     "static/media/leo.jpg": "/static/media/leo.e6db9954f8fa2bdb60ae.jpg",
     "static/media/keshav.jpg": "/static/media/keshav.12d06c3dbb6c7907c895.jpg",
     "static/media/nasa.png": "/static/media/nasa.9011c2a061bc46f8fd8e.png",
@@ -31,11 +31,11 @@
     "static/media/lerobot.png": "/static/media/lerobot.a4a16cd4e573dcbdb889.png",
     "index.html": "/index.html",
     "main.9aac1d39.css.map": "/static/css/main.9aac1d39.css.map",
-    "main.8617425f.js.map": "/static/js/main.8617425f.js.map",
+    "main.73ebf5e0.js.map": "/static/js/main.73ebf5e0.js.map",
     "453.0b834c22.chunk.js.map": "/static/js/453.0b834c22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9aac1d39.css",
-    "static/js/main.8617425f.js"
+    "static/js/main.73ebf5e0.js"
   ]
 }
