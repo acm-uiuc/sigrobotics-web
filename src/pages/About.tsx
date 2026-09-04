@@ -16,14 +16,21 @@ const TeamSection = ({ title, members }: { title: string; members: Member[] }) =
     <div className="team-grid">
       {members.map((member) => (
         <div key={member.name} className="team-member">
-          <a
-            href={member.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="team-member-link"
-          >
-            <img src={member.image} alt={member.name} className="team-member-image" />
-          </a>
+          {/* Not everyone has a page to link to. */}
+          {member.link ? (
+            <a
+              href={member.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="team-member-link"
+            >
+              <img src={member.image} alt={member.name} className="team-member-image" />
+            </a>
+          ) : (
+            <div className="team-member-link">
+              <img src={member.image} alt={member.name} className="team-member-image" />
+            </div>
+          )}
           <p className="team-member-name">{member.name}</p>
         </div>
       ))}

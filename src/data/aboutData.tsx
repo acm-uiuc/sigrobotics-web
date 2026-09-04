@@ -9,6 +9,8 @@ import saketh from '../assets/exec/saketh.jpg';
 import henry from '../assets/exec/henry.jpg';
 import leo from '../assets/exec/leo.jpg';
 import robert from '../assets/exec/robert.jpg';
+import keshav from '../assets/exec/keshav.jpg';
+import aarsh from '../assets/exec/aarsh.jpg';
 
 import amazon from '../assets/companies/amazon.png';
 import anduril from '../assets/companies/anduril.png';
@@ -37,6 +39,8 @@ export const chairs = [
   { name: 'Manav Chandaka', link: 'https://www.linkedin.com/in/manavchandaka/', image: manav },
   { name: 'Saketh Kantipudi', link: 'https://www.linkedin.com/in/saketh-kantipudi/', image: saketh },
   { name: 'Robert Molina', link: 'https://www.linkedin.com/in/rcmolina', image: robert },
+  { name: 'Keshav Badrinath', link: 'https://keshavbadrinath.com', image: keshav },
+  { name: 'Aarsh Mittal', link: '', image: aarsh },
 ];
 
 export const retired = [
