@@ -1,24 +1,156 @@
-.meetings {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .meeting-times {
-    margin-bottom: 20px;
-  }
-  
+/* Every block on this page shares the page column, so headings and table
+   edges line up down the whole page. */
+.meeting-semester {
+  width: 100%;
+  max-width: 52rem;
+  margin: 0 0 3.25rem;
+}
+
+.meeting-semester-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.meeting-semester-head .heading-subtitle-bold {
+  margin-bottom: 0;
+}
+
+.meeting-semester-head + .meeting-schedule,
+.meeting-semester-head + .meeting-empty {
+  margin-top: 1rem;
+}
+
+.meeting-flag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.5rem;
+}
+
+.meeting-empty {
+  font-size: 0.9375rem;
+  color: var(--ink-subtle);
+  border: 1px dashed var(--hairline-strong);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin: 1rem 0 0;
+}
+
+/* When & Where */
+.meeting-when {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+.meeting-when dt {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-subtle);
+  margin-bottom: 0.25rem;
+}
+
+.meeting-when dd {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--ink);
+}
+
+/* Schedules — fixed columns so every semester's table lines up with the next */
+.meeting-schedule {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0 0;
+  font-size: 0.9375rem;
+  table-layout: fixed;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.meeting-col-date { width: 7.5rem; }
+.meeting-col-resources { width: 10rem; }
+
+.meeting-schedule th,
+.meeting-schedule td {
+  border: 0;
+  border-bottom: 1px solid var(--hairline);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  color: var(--ink-muted);
+}
+
+.meeting-schedule tr:last-child td {
+  border-bottom: 0;
+}
+
+.meeting-schedule th {
+  background-color: var(--surface-sunken);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.meeting-schedule td:first-child {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-subtle);
+  white-space: nowrap;
+}
+
+.meeting-schedule td:nth-child(2) {
+  color: var(--ink);
+}
+
+/* Resource links as small tags rather than bracketed text */
+.meeting-resource {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.45rem;
+  margin: 0 0.25rem 0.25rem 0;
+  transition: background-color var(--duration) var(--ease),
+    border-color var(--duration) var(--ease), color var(--duration) var(--ease);
+}
+
+.meeting-resource:hover {
+  background: var(--surface-sunken);
+  border-color: var(--neutral-600);
+  color: var(--ink);
+  opacity: 1;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
   .meeting-schedule {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0.5rem;
+    font-size: 0.875rem;
   }
-  
-  .meeting-schedule th, .meeting-schedule td {
-    border: 1px solid var(--secondary-theme-color-dark);
-    padding: 8px;
-    text-align: left;
+  .meeting-schedule th,
+  .meeting-schedule td {
+    padding: 0.625rem 0.75rem;
   }
-  
-  .meeting-schedule th {
-    background-color: var(--primary-dim-color);
-  }
+  .meeting-col-date { width: 6rem; }
+  .meeting-col-resources { width: 7rem; }
+}

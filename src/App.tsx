@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Meetings from './pages/Meetings';
+import Papers from './pages/Papers';
 import Projects from './pages/Projects';
 import Sponsors from './pages/Sponsors';
 import Contact from './pages/Contact';
 import './styles/App.css';
 import HeroSection from './components/HeroSection';
+// Hero background — swap this import for your own image.
 import openHouseImage from './assets/open_house.png';
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
 
 
         <Routes>
-          <Route path="/" element={        
+          <Route path="/" element={
             <HeroSection
               title="Welcome to SIGRobotics."
               description={
@@ -28,7 +30,6 @@ function App() {
                           href="https://acm.illinois.edu" 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-blue-600 hover:text-blue-800 underline"
                       >
                           ACM@UIUC
                       </a>
@@ -37,12 +38,13 @@ function App() {
                   </>
               }
               imageSrc={openHouseImage}
-              imageAlt="UIUC Robotics team working on a project"
+              imageAlt="SIGRobotics at the ACM open house"
             />
           }/>
           <Route path="/about" element={<About />} />
           <Route path="/meetings" element={<Meetings />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/papers" element={<Papers />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

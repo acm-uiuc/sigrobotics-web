@@ -115,103 +115,102 @@ const fa24: Meeting[] = [
       {type: "slides", link: "https://docs.google.com/presentation/d/16lQ9hDaYBDD3pafss-KkI-cSvQ4WVL6mLJkh7YbN6yk/edit#slide=id.g3042e88b18b_0_1"},
     ] },
 ];
+// Not scheduled yet — the section renders a placeholder until it fills in.
+const fa26: Meeting[] = [];
+
+/** "MM/DD/YYYY" -> sortable timestamp; 0 if the string is malformed. */
+const parseDate = (value: string): number => {
+  const [month, day, year] = value.split('/').map(Number);
+  if (!month || !day || !year) return 0;
+  return new Date(year, month - 1, day).getTime();
+};
+
+const SemesterSchedule = ({
+  title,
+  meetings,
+  inProgress = false,
+}: {
+  title: string;
+  meetings: Meeting[];
+  inProgress?: boolean;
+}) => {
+  // Most recent workshop first.
+  const ordered = [...meetings].sort((a, b) => parseDate(b.date) - parseDate(a.date));
+  return (
+  <section className="meeting-semester">
+    <div className="meeting-semester-head">
+      <h2 className="heading-subtitle-bold">{title}</h2>
+      {inProgress && <span className="meeting-flag">In progress</span>}
+    </div>
+
+    {meetings.length === 0 ? (
+      <p className="meeting-empty">
+        Schedule is being finalised — check back soon.
+      </p>
+    ) : (
+      <table className="meeting-schedule">
+        <colgroup>
+          <col className="meeting-col-date" />
+          <col className="meeting-col-topic" />
+          <col className="meeting-col-resources" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Resources</th>
+          </tr>
+        </thead>
+        <tbody>
+          {ordered.map((meeting, index) => (
+            <tr key={index}>
+              <td>{meeting.date}</td>
+              <td>{meeting.topic}</td>
+              <td>
+                {meeting.resources.map((resource, i) => (
+                  <a
+                    key={i}
+                    href={resource.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="meeting-resource"
+                  >
+                    {resource.type}
+                  </a>
+                ))}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </section>
+  );
+};
 
 const Meetings: React.FC = () => {
   return (
     <div className="layout-xl">
       <h1 className="heading-title">Meetings</h1>
-      <div>
-        <h2 className="heading-subtitle-bold">When & Where</h2>
-        <p><b>General Meeting:</b> Tuesdays, 7-8 PM | Siebel 1302</p>
-        <p><b>Project Meeting:</b> Saturdays, 1-3 PM | Siebel 2405</p>
-      </div>
 
-      <div className="layout-md">
-        <h2 className="heading-subtitle-bold">Spring 2026</h2>
-        <table className="meeting-schedule">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Topic</th>
-              <th>Resources</th>
-            </tr>
-          </thead>
-          <tbody>
-            {sp26.map((meeting, index) => (
-              <tr key={index}>
-                <td>{meeting.date}</td>
-                <td>{meeting.topic}</td>
-                <td>{meeting.resources.map((resource, index) => (
-                  <span key={index}>
-                    <a href={resource.link} target="_blank" rel="noopener noreferrer">
-                      {"["+resource.type+"]"}
-                    </a>
-                    {index < meeting.resources.length - 1 ? ', ' : ''}
-                  </span>
-                ))}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <section className="meeting-semester">
+        <h2 className="heading-subtitle-bold">When &amp; Where</h2>
+        <dl className="meeting-when">
+          <div>
+            <dt>General meeting</dt>
+            <dd>Tuesdays, 7–8 PM · Siebel 1302</dd>
+          </div>
+          <div>
+            <dt>Project meeting</dt>
+            <dd>Saturdays, 1–3 PM · Siebel 2405</dd>
+          </div>
+        </dl>
+      </section>
 
-      <div className="layout-md">
-        <h2 className="heading-subtitle-bold">Spring 2025</h2>
-        <table className="meeting-schedule">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Topic</th>
-              <th>Resources</th>
-            </tr>
-          </thead>
-          <tbody>
-            {sp25.map((meeting, index) => (
-              <tr key={index}>
-                <td>{meeting.date}</td>
-                <td>{meeting.topic}</td>
-                <td>{meeting.resources.map((resource, index) => (
-                  <span key={index}>
-                    <a href={resource.link} target="_blank" rel="noopener noreferrer">
-                      {"["+resource.type+"]"}
-                    </a>
-                    {index < meeting.resources.length - 1 ? ', ' : ''}
-                  </span>
-                ))}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <div className="layout-sm">
-        <h2 className="heading-subtitle-bold">Fall 2024</h2>
-        <table className="meeting-schedule">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Topic</th>
-              <th>Resources</th>
-            </tr>
-          </thead>
-          <tbody>
-            {fa24.map((meeting, index) => (
-              <tr key={index}>
-              <td>{meeting.date}</td>
-              <td>{meeting.topic}</td>
-              <td>{meeting.resources.map((resource, index) => (
-                <span key={index}>
-                  <a href={resource.link} target="_blank" rel="noopener noreferrer">
-                    {"["+resource.type+"]"}
-                  </a>
-                  {index < meeting.resources.length - 1 ? ', ' : ''}
-                </span>
-              ))}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <SemesterSchedule title="Fall 2026" meetings={fa26} inProgress />
+      <SemesterSchedule title="Spring 2026" meetings={sp26} />
+      <SemesterSchedule title="Spring 2025" meetings={sp25} />
+      <SemesterSchedule title="Fall 2024" meetings={fa24} />
     </div>
   );
 };

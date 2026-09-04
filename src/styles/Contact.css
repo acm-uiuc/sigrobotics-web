@@ -1,23 +1,62 @@
-.contact-form {
-  background-color: var(--primary-dim-color);
-  border-radius: 8px;
-  color: var(--primary-black-color);
-  padding: 2rem 2rem;
-  margin-bottom: 4rem;
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  max-width: 52rem;
+}
+
+.contact-details dt {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-subtle);
+  margin-bottom: 0.35rem;
+}
+
+.contact-details dd {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.contact-details dd a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--hairline-strong);
+}
+
+.contact-details dd a:hover {
+  opacity: 1;
+  text-decoration: none;
+  border-bottom-color: var(--neutral-700);
 }
 
 .social-links {
-  margin: 0.5rem;
-  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
 }
 
 .social-links a {
-  margin-right: 1rem;
-  font-size: 1.5rem;
-  color: var(--primary-white-color);
-  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline-strong);
+  font-size: 1.125rem;
+  color: var(--ink);
+  transition: background-color var(--duration) var(--ease),
+    border-color var(--duration) var(--ease);
 }
 
 .social-links a:hover {
-  color: var(--secondary-theme-color);
+  background: var(--surface-sunken);
+  border-color: var(--neutral-600);
+  color: var(--ink);
+  opacity: 1;
+  text-decoration: none;
 }

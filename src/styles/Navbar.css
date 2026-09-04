@@ -1,109 +1,246 @@
+/* Floating pill navbar — centered, fixed, glass. */
 .navbar {
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: var(--primary-white-color);
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 112;
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--hairline);
+  background: rgba(249, 250, 247, 0.72);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--duration) var(--ease),
+    border-color var(--duration) var(--ease),
+    box-shadow var(--duration) var(--ease);
+  will-change: background-color, border-color, box-shadow;
+}
+
+.navbar.scrolled {
+  background: rgba(249, 250, 247, 0.92);
+  border-color: var(--hairline-strong);
+  box-shadow: var(--shadow-md);
 }
 
 .navbar-container {
+  position: relative;
+  z-index: 1;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 92%;
-  margin: 0 auto;
-  padding: 0 2rem;
+  gap: 0.875rem;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
 }
 
 .navbar-logo {
-  color: var(--primary-black-color);
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    align-items:center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  font-variation-settings: var(--display-axes);
+  letter-spacing: -0.015em;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
 .navbar-logo:hover {
-  color: var(--primary-shadow-color);
+  color: var(--ink);
+  opacity: 0.7;
   text-decoration: none;
 }
 
 .navbar-logo-image {
-  height: 70px; /* Adjust size as needed */
+  height: 28px;
   width: auto;
-  margin-right: 5px; /* Space between logo and text */
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: var(--primary-black-color);
-  margin: 4px 0;
-  transition: 0.4s;
+.navbar-divider {
+  width: 1px;
+  height: 1.375rem;
+  flex-shrink: 0;
+  background: var(--hairline-strong);
 }
 
 .navbar-menu {
+  position: relative;
   display: flex;
-  list-style-type: none;
+  align-items: center;
+  gap: 0.125rem;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* The panel that trails the cursor across the links and settles back on
+   whichever one matches the current route. Its size and position are both
+   measured from the target link, so it lands square on the text. */
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: var(--radius-md);
+  background: rgba(44, 44, 44, 0.08);
+  pointer-events: none;
+  /* No transition until the first placement lands, or it would slide in
+     from the left edge on load. */
+  transition: none;
+}
+
+.nav-indicator.ready {
+  transition: transform 180ms var(--ease), width 180ms var(--ease),
+    height 180ms var(--ease), opacity 140ms var(--ease);
+}
+
 .navbar-item {
-  margin-left: 1.5rem;
+  margin: 0;
 }
 
 .navbar-link {
-  color: var(--primary-black-color);
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--ink-muted);
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  white-space: nowrap;
+  transition: color var(--duration) var(--ease), opacity var(--duration) var(--ease);
 }
 
-.navbar-link:hover {
-  color: var(--primary);
+.navbar-link:hover,
+.navbar-link.active {
+  color: var(--ink);
+  opacity: 1;
   text-decoration: none;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.bar {
+  width: 18px;
+  height: 1.5px;
+  background-color: var(--ink);
+  border-radius: 2px;
+  transition: transform var(--duration) var(--ease),
+    opacity var(--duration) var(--ease);
+}
+
+.bar.open:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.bar.open:nth-child(2) { opacity: 0; }
+.bar.open:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+@media (max-width: 900px) {
+  .navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    /* backdrop-filter would make this a containing block for the fixed
+       overlay menu below, trapping it inside the bar — so drop it here
+       and use a solid surface instead. */
+    background: var(--surface);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .navbar.scrolled {
+    background: var(--surface);
+  }
+
+  .navbar-container {
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+  }
+
   .hamburger {
     display: flex;
   }
 
+  /* Fullscreen overlay menu with oversized display-face links. */
   .navbar-menu {
-    display: none;
+    position: fixed;
+    inset: 0;
     flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: var(--primary-white-color);
-    border-width: 2px;
-    border-color: var(--primary-black-color);
-    padding: .5rem 0;
-    box-shadow: 0px 4px 6px var(--primary-shadow-color);
-    border-bottom: 5px solid var(--primary-black-color);
-}
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+    padding: 6rem 1.75rem 2rem;
+    background: var(--surface);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity var(--duration) var(--ease),
+      transform var(--duration) var(--ease);
+    z-index: 0;
+  }
 
   .navbar-menu.active {
-    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-indicator,
+  .navbar-divider {
+    display: none;
   }
 
   .navbar-item {
-    margin: 0.5rem 0;
-    text-align: center;
+    width: 100%;
   }
 
-  .navbar-item:hover {
-    color: var(--primary-shadow-color);
+  .navbar-link {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 9vw, 3rem);
+    font-weight: 400;
+    font-variation-settings: var(--display-axes);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--ink-subtle);
+    padding: 0.25rem 0;
+  }
+
+  .navbar-link:hover,
+  .navbar-link.active {
+    color: var(--ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-indicator,
+  .nav-indicator.ready {
+    transition: opacity 200ms var(--ease);
   }
 }

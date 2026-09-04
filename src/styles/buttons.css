@@ -2,65 +2,67 @@
 .button-primary,
 .button-primary-disabled,
 .button-secondary {
-    /* height: ...;
-    box-sizing: border-box; */
-    border-radius: 4px;
-    padding: 15px 32px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  border-radius: var(--radius-md);
+  padding: 0.875rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--duration) var(--ease),
+    color var(--duration) var(--ease), border-color var(--duration) var(--ease),
+    opacity var(--duration) var(--ease);
 }
 
 .button-primary {
-    background: var(--primary-theme-color);
-    color: var(--primary-white-color);
-    cursor: pointer;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 2rem 0.5rem;
+  background: var(--neutral-900);
+  color: var(--neutral-100);
+  border: 1px solid var(--neutral-900);
 }
 
 .button-primary:hover {
-    background: var(--primary-theme-color-hover);
-    color: var(--primary-white-color);
-    text-decoration: none;
-}
-
-.button-primary-disabled {
-    cursor: default;
-    background: var(--primary-theme-color-light);
-    color: var(--primary-white-color);
-    cursor: pointer;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 4px 2px;
+  background: var(--neutral-800);
+  border-color: var(--neutral-800);
+  color: var(--neutral-100);
+  text-decoration: none;
+  opacity: 1;
 }
 
 .button-secondary {
-    background: var(--primary-white-color);
-    color: var(--primary-theme-color);
-    cursor: pointer;
-    border: 2px solid var(--primary-black-color);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 2rem 0.5rem;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--hairline-strong);
 }
 
 .button-secondary:hover {
-  background: var(--primary-dim-color);
+  background: var(--surface-sunken);
+  border-color: var(--neutral-600);
+  color: var(--ink);
   text-decoration: none;
+  opacity: 1;
+}
+
+.button-primary-disabled {
+  background: var(--neutral-500);
+  color: var(--neutral-0);
+  border: 1px solid var(--neutral-500);
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Row of buttons in normal page flow. */
+.action-row,
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
 }

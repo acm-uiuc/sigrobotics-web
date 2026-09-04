@@ -10,6 +10,21 @@ import henry from '../assets/exec/henry.jpg';
 import leo from '../assets/exec/leo.jpg';
 import robert from '../assets/exec/robert.jpg';
 
+import amazon from '../assets/companies/amazon.png';
+import anduril from '../assets/companies/anduril.png';
+import dyna from '../assets/companies/dyna.png';
+import generalbiological from '../assets/companies/generalbiological.png';
+import gm from '../assets/companies/gm.png';
+import lightberry from '../assets/companies/lightberry.png';
+import meta from '../assets/companies/meta.png';
+import nasa from '../assets/companies/nasa.png';
+import nvidia from '../assets/companies/nvidia.png';
+import saronic from '../assets/companies/saronic.png';
+import scenix from '../assets/companies/scenix.png';
+import sliprobotics from '../assets/companies/sliprobotics.png';
+import waabi from '../assets/companies/waabi.png';
+import zoox from '../assets/companies/zoox.png';
+
 export const whatWeDo = [
   "Weekly workshops and lectures on robotics topics",
   "Hands-on projects and build sessions",
@@ -36,7 +51,24 @@ export const founders = [
   { name: 'Henry Che', link: 'https://hungdche.github.io/', image: henry },
 ];
 
-export const companies = [
-  "Amazon Robotics", "Anduril", "DYNA Robotics", "General Biological", 
-  "General Motors", "NASA", "Nvidia", "SceniX", "Slip Robotics", "Waabi", "Zoox"
+export interface Company {
+  name: string;
+  logo: string;
+}
+
+export const companies: Company[] = [
+  { name: 'Amazon Robotics', logo: amazon },
+  { name: 'Anduril', logo: anduril },
+  { name: 'DYNA Robotics', logo: dyna },
+  { name: 'General Biological', logo: generalbiological },
+  { name: 'General Motors', logo: gm },
+  { name: 'Lightberry', logo: lightberry },
+  { name: 'Meta', logo: meta },
+  { name: 'NASA', logo: nasa },
+  { name: 'NVIDIA', logo: nvidia },
+  { name: 'Saronic', logo: saronic },
+  { name: 'SceniX', logo: scenix },
+  { name: 'Slip Robotics', logo: sliprobotics },
+  { name: 'Waabi', logo: waabi },
+  { name: 'Zoox', logo: zoox },
 ];

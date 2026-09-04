@@ -5,49 +5,44 @@ import '../styles/HeroSection.css';
 interface HeroSectionProps {
     title?: string;
     description?: string | React.ReactNode;
-    imageSrc: string;
+    /** Full-bleed background image. Omit to fall back to the neutral wash. */
+    imageSrc?: string;
     imageAlt?: string;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
     title = "SIGRobotics",
     description = "We are a student-run robotics special-interest group.",
-    imageSrc = "/../assets/open_house.png",
+    imageSrc,
     imageAlt = "ACM Open House"
 }) => {
+    const style = {
+        '--hero-image': imageSrc ? `url(${imageSrc})` : 'none',
+        '--hero-placeholder-opacity': imageSrc ? 0 : 1,
+    } as React.CSSProperties;
+
     return (
-        <div className="layout-xl">
-            <div className="hero-container">
+        <section className="hero" style={style} aria-label={imageAlt}>
+            <div className="hero-inner">
                 <div className="hero-content">
-                    <h1 className="heading-title">
-                        {title}
-                    </h1>
-                    <p>
-                        {description}
-                    </p>
+                    <h1 className="hero-title">{title}</h1>
+                    <p className="hero-description">{description}</p>
                     <div className="hero-buttons">
-                        <a 
+                        <Link to="/about" className="button-primary">
+                            Learn More
+                        </Link>
+                        <a
                             href="https://discord.gg/d6MXagJTb8"
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="button-secondary"
                         >
                             Join Discord
                         </a>
-                        <Link to="/about" className="button-primary">
-                            Learn More
-                        </Link>
                     </div>
                 </div>
-                <div className="layout-img">
-                    <img
-                        src={imageSrc}
-                        alt={imageAlt}
-                        className="hero-image"
-                    />
-                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

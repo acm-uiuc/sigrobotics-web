@@ -1,43 +1,82 @@
+/*
+ * Display headings are set in a wide serif at a light weight. The broad
+ * letterforms and large x-height mean these can run a touch smaller and
+ * tighter than a condensed face at the same visual weight.
+ */
 .heading-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0.5rem;
-    margin-bottom: 2.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5.8vw, 4rem);
+  font-weight: 400;
+  font-variation-settings: var(--display-axes);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 1.5rem;
+  max-width: 24ch;
 }
-  
-.heading-subtitle {
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 0.5rem;
-}
-  
-.heading-subtitle-bold {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0.5rem;
-    margin-bottom: 1rem;
-}
-  
+
+.heading-subtitle,
+.heading-subtitle-bold,
 .heading-subtitle-semi-bold {
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 0.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.625rem);
+  font-variation-settings: var(--display-axes);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 1rem;
+  max-width: 28ch;
 }
 
-.heading-md {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0.5rem;
+.heading-subtitle,
+.heading-subtitle-semi-bold,
+.heading-subtitle-bold {
+  font-weight: 400;
 }
 
+.heading-md,
 .heading-md-bold {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-variation-settings: var(--display-axes);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.heading-md,
+.heading-md-bold {
+  font-weight: 400;
 }
 
 .heading-small {
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+/* Small uppercase label — used for section eyebrows and status chips. */
+.label-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin: 0 0 1rem;
+}
+
+.text-muted { color: var(--ink-muted); }
+.text-subtle { color: var(--ink-subtle); }
+
+.text-lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  max-width: 62ch;
 }

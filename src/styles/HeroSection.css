@@ -1,56 +1,136 @@
-@import "../styles/style.css";
+/* Full-bleed hero. The background image is set inline from the component via
+   --hero-image; the scrim below it keeps the display type legible over any
+   photo. Swap the image by changing the import in App.tsx. */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* svh tracks the visible area on mobile, so the hero isn't cut off by the
+     browser's collapsing address bar. */
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--neutral-800);
+  background-image: var(--hero-image, none);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-.hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+/* Placeholder wash when no image has been supplied yet. */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #444141 0%, #2c2c2c 55%, #171717 100%);
+  opacity: var(--hero-placeholder-opacity, 0);
+}
+
+/* Scrim — darkens the lower half so the copy stays readable. */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(23, 23, 23, 0.55) 0%,
+    rgba(23, 23, 23, 0.25) 35%,
+    rgba(23, 23, 23, 0.8) 100%
+  );
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 6rem 2rem 6rem;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.125rem;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6.2vw, 4.375rem);
+  font-weight: 400;
+  font-variation-settings: var(--display-axes);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  color: var(--neutral-0);
+  margin: 0 auto;
+  max-width: 18ch;
+  text-shadow: 0 1px 24px rgba(0, 0, 0, 0.35);
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 auto;
+  max-width: 54ch;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.4);
+}
+
+.hero-description a {
+  color: var(--neutral-0);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.45);
+}
+
+.hero-description a:hover {
+  color: var(--neutral-0);
+  opacity: 0.8;
 }
 
 .hero-buttons {
-    display: flex;
-    gap: 1rem;
-    padding-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
 }
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero .hero-buttons .button-primary {
+  background: var(--neutral-0);
+  color: var(--neutral-900);
+  border-color: var(--neutral-0);
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .hero-image-container {
-        height: 400px;
-    }
+.hero .hero-buttons .button-primary:hover {
+  background: var(--neutral-200);
+  border-color: var(--neutral-200);
+  color: var(--neutral-900);
+}
+
+.hero .hero-buttons .button-secondary {
+  color: var(--neutral-0);
+  border-color: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.hero .hero-buttons .button-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: var(--neutral-0);
 }
 
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-description {
-        font-size: 1.125rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-    }
-    
-    .hero-image-container {
-        height: 300px;
-    }
+  .hero-inner {
+    padding: 5rem 1.25rem 5rem;
+  }
+  .hero .hero-buttons .button-primary,
+  .hero .hero-buttons .button-secondary {
+    flex: 1 1 auto;
+  }
 }
