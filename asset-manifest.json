@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9aac1d39.css",
-    "main.js": "/static/js/main.73ebf5e0.js",
+    "main.css": "/static/css/main.19a7641e.css",
+    "main.js": "/static/js/main.a2c98dbf.js",
     "static/js/453.0b834c22.chunk.js": "/static/js/453.0b834c22.chunk.js",
     "static/media/booster.jpg": "/static/media/booster.39af1b550b081fbd8795.jpg",
-    "static/media/open_house.png": "/static/media/open_house.b3595f22ea498119639a.png",
     "static/media/henry.jpg": "/static/media/henry.a1412f3286fd3d4c705a.jpg",
     "static/media/bhargav.jpg": "/static/media/bhargav.5efa5799b49245cdbd17.jpg",
     "static/media/robert.jpg": "/static/media/robert.00eb0d3735a6526c3425.jpg",
+    "static/media/project_dating.jpg": "/static/media/project_dating.e9f1116a082a589304a2.jpg",
     "static/media/arm.png": "/static/media/arm.47c10359f3a424936f38.png",
     "static/media/gloria.jpg": "/static/media/gloria.9046ac7833272246496b.jpg",
+    "static/media/uavh.png": "/static/media/uavh.fbc295bc2596dd79b66a.png",
     "static/media/logo.png": "/static/media/logo.c4794158c9364db6752b.png",
+    "static/media/marc.png": "/static/media/marc.bd63b596a3ae6cb314ee.png",
     "static/media/craft.jpg": "/static/media/craft.55a0952a36c9ace146de.jpg",
     "static/media/nerf2physics.jpg": "/static/media/nerf2physics.792f22acf1afb23e1503.jpg",
     "static/media/gokul.jpg": "/static/media/gokul.28e55d68e4ee92751dc5.jpg",
@@ -24,18 +26,18 @@
     "static/media/leo.jpg": "/static/media/leo.e6db9954f8fa2bdb60ae.jpg",
     "static/media/keshav.jpg": "/static/media/keshav.12d06c3dbb6c7907c895.jpg",
     "static/media/nasa.png": "/static/media/nasa.9011c2a061bc46f8fd8e.png",
-    "static/media/temp.jpg": "/static/media/temp.ec56863fc83c7be347c4.jpg",
     "static/media/frodobots.png": "/static/media/frodobots.f9756f3de642c47a699c.png",
     "static/media/amazon.png": "/static/media/amazon.fbd8a2350eb91365b33b.png",
     "static/media/meta.png": "/static/media/meta.7c735eb95827a383e565.png",
     "static/media/lerobot.png": "/static/media/lerobot.a4a16cd4e573dcbdb889.png",
+    "static/media/placeholder.svg": "/static/media/placeholder.0859457f08a72023957a9e435aeff59e.svg",
     "index.html": "/index.html",
-    "main.9aac1d39.css.map": "/static/css/main.9aac1d39.css.map",
-    "main.73ebf5e0.js.map": "/static/js/main.73ebf5e0.js.map",
+    "main.19a7641e.css.map": "/static/css/main.19a7641e.css.map",
+    "main.a2c98dbf.js.map": "/static/js/main.a2c98dbf.js.map",
     "453.0b834c22.chunk.js.map": "/static/js/453.0b834c22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9aac1d39.css",
-    "static/js/main.73ebf5e0.js"
+    "static/css/main.19a7641e.css",
+    "static/js/main.a2c98dbf.js"
   ]
 }
