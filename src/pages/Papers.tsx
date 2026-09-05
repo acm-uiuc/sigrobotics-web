@@ -5,7 +5,7 @@ import { papers, Paper } from '../data/papersData';
 const PaperCard = ({ paper }: { paper: Paper }) => {
   const primary = paper.links[0];
   return (
-    <article className="paper-item">
+    <article className={`paper-item${paper.award ? ' paper-item-award' : ''}`}>
       <a
         href={primary.url}
         target="_blank"
@@ -21,6 +21,12 @@ const PaperCard = ({ paper }: { paper: Paper }) => {
           <span className="paper-venue-name">{paper.venue}</span>
           <span className="paper-venue-year">{paper.year}</span>
         </p>
+        {paper.award && (
+          <p className="paper-award">
+            <span className="paper-award-trophy" aria-hidden="true">🏆</span>
+            {paper.award}
+          </p>
+        )}
         <h3 className="paper-title">
           <a href={primary.url} target="_blank" rel="noopener noreferrer">
             {paper.title}

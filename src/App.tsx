@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 import './styles/App.css';
 import HeroSection from './components/HeroSection';
 // Hero background — swap this import for your own image.
-import openHouseImage from './assets/open_house.png';
+import heroImage from './assets/project_dating.jpg';
 
 function App() {
   return (
@@ -37,8 +37,8 @@ function App() {
                       quality research in robotics and robot learning.
                   </>
               }
-              imageSrc={openHouseImage}
-              imageAlt="SIGRobotics at the ACM open house"
+              imageSrc={heroImage}
+              imageAlt="SIGRobotics members at a project dating meeting"
             />
           }/>
           <Route path="/about" element={<About />} />

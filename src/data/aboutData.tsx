@@ -40,15 +40,15 @@ export const whatWeDo = [
 
 export const chairs = [
   { name: 'Manav Chandaka', link: 'https://www.linkedin.com/in/manavchandaka/', image: manav },
-  { name: 'Saketh Kantipudi', link: 'https://www.linkedin.com/in/saketh-kantipudi/', image: saketh },
   { name: 'Robert Molina', link: 'https://www.linkedin.com/in/rcmolina', image: robert },
   { name: 'Keshav Badrinath', link: 'https://keshavbadrinath.com', image: keshav },
-  { name: 'Aarsh Mittal', link: '', image: aarsh },
+  { name: 'Aarsh Mittal', link: 'https://aarsh.dev', image: aarsh },
   { name: 'Gokul Balaji', link: '', image: gokul },
   { name: 'Ewan McPhilliamy', link: '', image: ewan },
 ];
 
 export const retired = [
+  { name: 'Saketh Kantipudi', link: 'https://www.linkedin.com/in/saketh-kantipudi/', image: saketh },
   { name: 'Reid Faistl', link: 'https://www.linkedin.com/in/reid-faistl-8165412a7/', image: reid },
   { name: 'Leo Lin', link: 'https://www.leo-lin.com/', image: leo },
 ];

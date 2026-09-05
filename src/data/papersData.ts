@@ -18,6 +18,8 @@ export interface Paper {
   preview: string;
   /** Page previews are portrait; photos are landscape. */
   previewKind: 'page' | 'photo';
+  /** Set when the paper was recognised at its venue; highlights the card. */
+  award?: string;
   links: PaperLink[];
 }
 
@@ -31,6 +33,7 @@ export const papers: Paper[] = [
       'A tendon-driven anthropomorphic hand that places soft material at the joints and keeps the links rigid, on the observation that contact is not uniform across a hand. Covers 33/33 grasps in the Feix taxonomy for under $600.',
     preview: craft,
     previewKind: 'page',
+    award: 'Best Paper, Dexterous Manipulation Workshop',
     links: [
       { label: 'Project page', url: 'https://craft-hand.github.io/' },
       { label: 'arXiv', url: 'https://arxiv.org/abs/2603.12120' },
