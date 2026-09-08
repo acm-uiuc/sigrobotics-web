@@ -33,13 +33,23 @@ const ProjectCard = ({ project }: { project: Project }) => (
         <span className="project-award-place">{project.award.place}</span>
       </p>
     )}
-    <div className="project-image-container">
+    <div
+      className={`project-image-container${project.images ? ' project-image-container-pair' : ''}`}
+    >
       <MaybeLink href={project.link} className="project-image-link">
-        <img
-          src={project.image}
-          alt={project.title}
-          className={`project-image${project.imageFit === 'contain' ? ' project-image-contain' : ''}`}
-        />
+        {project.images ? (
+          <div className="project-image-pair">
+            {project.images.map((src) => (
+              <img key={src} src={src} alt={project.title} className="project-image" />
+            ))}
+          </div>
+        ) : (
+          <img
+            src={project.image}
+            alt={project.title}
+            className={`project-image${project.imageFit === 'contain' ? ' project-image-contain' : ''}`}
+          />
+        )}
       </MaybeLink>
     </div>
     <div className="project-content">

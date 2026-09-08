@@ -1,6 +1,8 @@
 // src/data/projectsData.ts (or wherever you prefer to place it)
 import arm from '../assets/projs/arm.png';
 import booster from '../assets/projs/booster.jpg';
+import f1tenthfront from '../assets/projs/f1tenthfront.jpg';
+import f1tenthside from '../assets/projs/f1tenthside.jpg';
 import boosterhand from '../assets/projs/boosterhand.png';
 import marc from '../assets/projs/marc.png';
 import matchabot from '../assets/projs/matchabot.jpg';
@@ -13,6 +15,10 @@ export interface Project {
   image: string;
   link: string;
   status: 'Ongoing' | 'Completed' | 'Archived';
+  /** Two photos shown side by side in the card, in place of `image`.
+   *  The columns are proportioned portrait-then-landscape, so pass them in
+   *  that order to keep both uncropped. */
+  images?: string[];
   /** Fit the whole image inside the card instead of cropping it to fill. */
   imageFit?: 'cover' | 'contain';
   /** Pulled out of the grid and shown as the lead item on the projects page. */
@@ -82,7 +88,8 @@ export const projects: Project[] = [
   {
     title: "RoboRacer Competition",
     description: "Racing a 1/10-scale car head-to-head at RoboRacer (formerly F1TENTH), building the full onboard stack: SLAM localization, raceline planning, and high-speed control.",
-    image: placeholder,
+    image: f1tenthside,
+    images: [f1tenthfront, f1tenthside],
     link: "https://github.com/SIGRobotics-UIUC/f1tenth",
     status: "Ongoing"
   },
