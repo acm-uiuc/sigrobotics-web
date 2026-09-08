@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.19a7641e.css",
-    "main.js": "/static/js/main.f598d611.js",
+    "main.css": "/static/css/main.719dd64a.css",
+    "main.js": "/static/js/main.41224bdd.js",
     "static/js/453.0b834c22.chunk.js": "/static/js/453.0b834c22.chunk.js",
     "static/media/booster.jpg": "/static/media/booster.39af1b550b081fbd8795.jpg",
     "static/media/henry.jpg": "/static/media/henry.a1412f3286fd3d4c705a.jpg",
+    "static/media/f1tenthfront.jpg": "/static/media/f1tenthfront.9e36ef3655aeaf466166.jpg",
     "static/media/bhargav.jpg": "/static/media/bhargav.5efa5799b49245cdbd17.jpg",
     "static/media/robert.jpg": "/static/media/robert.00eb0d3735a6526c3425.jpg",
     "static/media/project_dating.jpg": "/static/media/project_dating.e9f1116a082a589304a2.jpg",
     "static/media/arm.png": "/static/media/arm.47c10359f3a424936f38.png",
+    "static/media/boosterhand.png": "/static/media/boosterhand.334282cf77053e22a9f8.png",
+    "static/media/f1tenthside.jpg": "/static/media/f1tenthside.171ab9f9f77192ebf801.jpg",
     "static/media/gloria.jpg": "/static/media/gloria.9046ac7833272246496b.jpg",
     "static/media/uavh.png": "/static/media/uavh.fbc295bc2596dd79b66a.png",
     "static/media/logo.png": "/static/media/logo.c4794158c9364db6752b.png",
@@ -32,12 +35,12 @@
     "static/media/lerobot.png": "/static/media/lerobot.a4a16cd4e573dcbdb889.png",
     "static/media/placeholder.svg": "/static/media/placeholder.0859457f08a72023957a9e435aeff59e.svg",
     "index.html": "/index.html",
-    "main.19a7641e.css.map": "/static/css/main.19a7641e.css.map",
-    "main.f598d611.js.map": "/static/js/main.f598d611.js.map",
+    "main.719dd64a.css.map": "/static/css/main.719dd64a.css.map",
+    "main.41224bdd.js.map": "/static/js/main.41224bdd.js.map",
     "453.0b834c22.chunk.js.map": "/static/js/453.0b834c22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19a7641e.css",
-    "static/js/main.f598d611.js"
+    "static/css/main.719dd64a.css",
+    "static/js/main.41224bdd.js"
   ]
 }
