@@ -49,6 +49,12 @@
   transition: transform 400ms var(--ease);
 }
 
+.project-image-contain {
+  object-fit: contain;
+  padding: 0.5rem;
+  background: var(--surface-raised);
+}
+
 .project-item:hover .project-image {
   transform: scale(1.03);
 }

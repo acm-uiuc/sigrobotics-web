@@ -35,7 +35,11 @@ const ProjectCard = ({ project }: { project: Project }) => (
     )}
     <div className="project-image-container">
       <MaybeLink href={project.link} className="project-image-link">
-        <img src={project.image} alt={project.title} className="project-image" />
+        <img
+          src={project.image}
+          alt={project.title}
+          className={`project-image${project.imageFit === 'contain' ? ' project-image-contain' : ''}`}
+        />
       </MaybeLink>
     </div>
     <div className="project-content">

@@ -1,6 +1,7 @@
 // src/data/projectsData.ts (or wherever you prefer to place it)
 import arm from '../assets/projs/arm.png';
 import booster from '../assets/projs/booster.jpg';
+import boosterhand from '../assets/projs/boosterhand.png';
 import marc from '../assets/projs/marc.png';
 import matchabot from '../assets/projs/matchabot.jpg';
 import placeholder from '../assets/projs/placeholder.svg';
@@ -12,6 +13,8 @@ export interface Project {
   image: string;
   link: string;
   status: 'Ongoing' | 'Completed' | 'Archived';
+  /** Fit the whole image inside the card instead of cropping it to fill. */
+  imageFit?: 'cover' | 'contain';
   /** Pulled out of the grid and shown as the lead item on the projects page. */
   featured?: boolean;
   /** Set when the project placed at a competition; highlights the card. */
@@ -100,7 +103,8 @@ export const projects: Project[] = [
   {
     title: "Booster Hand",
     description: "Creating a dexterous hand for the Booster K1 and integrating it into the firmware to be controlled natively.",
-    image: placeholder,
+    image: boosterhand,
+    imageFit: 'contain',
     link: "",
     status: "Ongoing"
   },
