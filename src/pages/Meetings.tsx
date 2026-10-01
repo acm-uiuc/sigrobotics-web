@@ -21,6 +21,42 @@ const sp26: Meeting[] = [
     resources: [
       {type: "slides", link: "https://docs.google.com/presentation/d/1_A7KlO1l7nkaIzwfFUKeIyLa8NTt2WNPBtr8jSUmCo0/edit"},
     ] },
+  { date: '02/03/2026', topic: 'Intro to Deep Learning',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1qGF-tzzNYqJ8r_mysc874rxoXAizDVCMGZS0z8kQgco/edit"},
+    ] },
+  { date: '02/10/2026', topic: 'Inverse Kinematics',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1YN3l-m8wtW2GzcLqFLBS8wP9cmfl5H3eFgzLxK-y82c/edit"},
+    ] },
+  { date: '02/17/2026', topic: 'Reinforcement Learning, Part 1',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1CvjB1nPwaw8ayEoBbs2VYtmTvD6hOatEgkxoll8CtS8/edit"},
+    ] },
+  { date: '02/24/2026', topic: 'Reinforcement Learning, Part 2',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1kJLmsvr72GPjTB01Y0JOTKB4zDK7YjElfVCwohWTisk/edit"},
+    ] },
+  { date: '03/03/2026', topic: 'Computer Vision, Part 1',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/15HIHmR03pu7G1SyMHtv5I_V_p0MM2HCyvt15qZZAP00/edit"},
+    ] },
+  { date: '03/10/2026', topic: 'Computer Vision, Part 2',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/16LnX5O74PLeBL_GdghYrRQld8F1fqpRyW9VSGLMHlKU/edit"},
+    ] },
+  { date: '03/24/2026', topic: 'Transformers',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1iDskpFl0zPu5_lVka2k5V2HBDpTcDrTCvmqIRYs9zyU/edit"},
+    ] },
+  { date: '03/31/2026', topic: 'Denoising Diffusion Models',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1VqFwgc80oAAjJwleR_fwfekF_U-evQKvRvi3FDOtXsw/edit"},
+    ] },
+  { date: '04/07/2026', topic: 'Score-Based Diffusion',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1IPtB_kkYFjl7sBgDPkTBvF11Bza8hk-E_iHnj9MLIqA/edit"},
+    ] },
   // { date: '', topic: '', 
   //   resources: [
   //     {type: "slides", link: ""},
@@ -115,8 +151,20 @@ const fa24: Meeting[] = [
       {type: "slides", link: "https://docs.google.com/presentation/d/16lQ9hDaYBDD3pafss-KkI-cSvQ4WVL6mLJkh7YbN6yk/edit#slide=id.g3042e88b18b_0_1"},
     ] },
 ];
-// Not scheduled yet — the section renders a placeholder until it fills in.
-const fa26: Meeting[] = [];
+const fa26: Meeting[] = [
+  { date: '09/15/2026', topic: 'Intro to Deep Learning',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1LnXYT5ZJpLBB9dg7YrZ5WvDn_gzuiDADINTilGwbv1A/edit"},
+    ] },
+  { date: '09/22/2026', topic: 'Deep Learning Code-Along',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1pRpUWIz4nB4aXzB4kNy1ifas9vwuxWCLhjUz5ltS0nk/edit"},
+    ] },
+  { date: '09/29/2026', topic: 'Energy Models',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/128Qri-xvU1Wm8BJznDMe5sBcDf4l88AZV_0SV7byT_8/edit"},
+    ] },
+];
 
 /** "MM/DD/YYYY" -> sortable timestamp; 0 if the string is malformed. */
 const parseDate = (value: string): number => {
