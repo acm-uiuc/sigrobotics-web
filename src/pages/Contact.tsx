@@ -1,8 +1,9 @@
 import React from 'react';
 import '../styles/Contact.css';
 import { FaDiscord, FaTwitter, FaGithub } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
-const socials = [
+const socials: { label: string; href: string; Icon: IconType }[] = [
   { label: 'Discord', href: 'https://discord.gg/xBNhspqwSc', Icon: FaDiscord },
   { label: 'Twitter', href: 'https://x.com/sigrobotics', Icon: FaTwitter },
   { label: 'GitHub', href: 'https://github.com/SIGRobotics-UIUC', Icon: FaGithub },
@@ -26,7 +27,7 @@ const Contact: React.FC = () => (
       </div>
       <div>
         <dt>Address</dt>
-        <dd>201 N Goodwin Ave, Urbana, IL 61801</dd>
+        <dd>201 N Goodwin Ave, Room 1131, Urbana, IL 61801</dd>
       </div>
     </dl>
 

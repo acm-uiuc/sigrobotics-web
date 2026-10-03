@@ -2,6 +2,7 @@
 import craft from '../assets/papers/craft.jpg';
 import nerf2physics from '../assets/papers/nerf2physics.jpg';
 import reasonnav from '../assets/papers/reasonnav.jpg';
+import simonwheels from '../assets/papers/simonwheels.jpg';
 
 export interface PaperLink {
   label: string;
@@ -51,7 +52,7 @@ export const papers: Paper[] = [
     preview: reasonnav,
     previewKind: 'page',
     links: [
-      { label: 'Project page', url: 'https://reasonnav.github.io/' },
+      { label: 'Project Page', url: 'https://reasonnav.github.io/' },
       { label: 'arXiv', url: 'https://arxiv.org/abs/2509.21189' },
       { label: 'Code', url: 'https://github.com/ReasonNav/ReasonNav' },
     ],
@@ -67,9 +68,25 @@ export const papers: Paper[] = [
     preview: nerf2physics,
     previewKind: 'page',
     links: [
-      { label: 'Project page', url: 'https://ajzhai.github.io/NeRF2Physics/' },
+      { label: 'Project Page', url: 'https://ajzhai.github.io/NeRF2Physics/' },
       { label: 'arXiv', url: 'https://arxiv.org/abs/2404.04242' },
       { label: 'Code', url: 'https://github.com/ajzhai/NeRF2Physics' },
+    ],
+  },
+  {
+    title: 'Sim-on-Wheels: Physical World in the Loop Simulation for Self-Driving',
+    authors:
+      'Yuan Shen, Bhargav Chandaka, Zhi-Hao Lin, Albert Zhai, Hang Cui, David Forsyth, Shenlong Wang',
+    venue: 'ICRA (IEEE RA-L)',
+    year: '2024',
+    abstract:
+      'We present Sim-on-Wheels, a safe, realistic, and vehicle-in-loop framework to test autonomous vehicles performance in the real world under safety-critical scenarios with high fidelity and low risk.',
+    preview: simonwheels,
+    previewKind: 'page',
+    links: [
+      { label: 'Project Page', url: 'https://sim-on-wheels.github.io/' },
+      { label: 'arXiv', url: 'https://arxiv.org/abs/2306.08807' },
+      { label: 'Code', url: 'https://github.com/Sim-on-Wheels' },
     ],
   },
 ];

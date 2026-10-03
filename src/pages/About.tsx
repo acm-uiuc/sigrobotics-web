@@ -84,10 +84,17 @@ const About: React.FC = () => {
         <ul className="company-grid">
           {companies.map((company) => (
             <li key={company.name} className="company-tile">
-              <span className="company-logo">
-                <img src={company.logo} alt="" loading="lazy" aria-hidden="true" />
-              </span>
-              <span className="company-name">{company.name}</span>
+              <a 
+                href={company.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="company-link"
+              >
+                <span className="company-logo">
+                  <img src={company.logo} alt="" loading="lazy" aria-hidden="true" />
+                </span>
+                <span className="company-name">{company.name}</span>
+              </a>
             </li>
           ))}
         </ul>

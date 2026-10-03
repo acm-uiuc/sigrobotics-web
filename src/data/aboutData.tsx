@@ -39,46 +39,47 @@ export const whatWeDo = [
 
 
 export const chairs = [
+  { name: 'Aarsh Mittal', link: 'https://aarsh.dev', image: aarsh },
+  { name: 'Ewan McPhilliamy', link: '', image: ewan },
+  { name: 'Gokul Balaji', link: '', image: gokul },
+  { name: 'Keshav Badrinath', link: 'https://keshavbadrinath.com', image: keshav },
   { name: 'Manav Chandaka', link: 'https://www.linkedin.com/in/manavchandaka/', image: manav },
   { name: 'Robert Molina', link: 'https://www.linkedin.com/in/rcmolina', image: robert },
-  { name: 'Keshav Badrinath', link: 'https://keshavbadrinath.com', image: keshav },
-  { name: 'Aarsh Mittal', link: 'https://aarsh.dev', image: aarsh },
-  { name: 'Gokul Balaji', link: '', image: gokul },
-  { name: 'Ewan McPhilliamy', link: '', image: ewan },
 ];
 
 export const retired = [
-  { name: 'Saketh Kantipudi', link: 'https://www.linkedin.com/in/saketh-kantipudi/', image: saketh },
-  { name: 'Reid Faistl', link: 'https://www.linkedin.com/in/reid-faistl-8165412a7/', image: reid },
   { name: 'Leo Lin', link: 'https://www.leo-lin.com/', image: leo },
+  { name: 'Reid Faistl', link: 'https://www.linkedin.com/in/reid-faistl-8165412a7/', image: reid },
+  { name: 'Saketh Kantipudi', link: 'https://www.linkedin.com/in/saketh-kantipudi/', image: saketh },
 ];
 
 export const founders = [
+  { name: 'Advait Patel', link: 'https://advaitpatel.com', image: advait },
   { name: 'Bhargav Chandaka', link: 'https://bchandaka.github.io/', image: bhargav },
   { name: 'Gloria Wang', link: 'https://gxywang.github.io/', image: gloria },
-  { name: 'Advait Patel', link: 'https://advaitpatel.com', image: advait },
   { name: 'Henry Che', link: 'https://hungdche.github.io/', image: henry },
 ];
 
 export interface Company {
   name: string;
   logo: string;
+  link: string;
 }
 
 export const companies: Company[] = [
-  { name: 'Amazon Robotics', logo: amazon },
-  { name: 'Anduril', logo: anduril },
-  { name: 'DYNA Robotics', logo: dyna },
-  { name: 'General Biological', logo: generalbiological },
-  { name: 'General Motors', logo: gm },
-  { name: 'Lightberry', logo: lightberry },
-  { name: 'Meta', logo: meta },
-  { name: 'Mind Robotics', logo: mindrobotics },
-  { name: 'NASA', logo: nasa },
-  { name: 'NVIDIA', logo: nvidia },
-  { name: 'Saronic', logo: saronic },
-  { name: 'SceniX', logo: scenix },
-  { name: 'Slip Robotics', logo: sliprobotics },
-  { name: 'Waabi', logo: waabi },
-  { name: 'Zoox', logo: zoox },
+  { name: 'Amazon Robotics', logo: amazon, link: 'https://www.amazon.science' },
+  { name: 'Anduril', logo: anduril, link: 'https://www.anduril.com' },
+  { name: 'DYNA Robotics', logo: dyna, link: 'https://www.dyna.co' },
+  { name: 'General Biological', logo: generalbiological, link: 'https://www.generalbiological.com' },
+  { name: 'General Motors', logo: gm, link: 'https://www.gm.com' },
+  { name: 'Lightberry', logo: lightberry, link: 'https://lightberry.com' },
+  { name: 'Meta', logo: meta, link: 'https://www.meta.com' },
+  { name: 'Mind Robotics', logo: mindrobotics, link: 'https://www.mindrobotics.com' },
+  { name: 'NASA', logo: nasa, link: 'https://www.nasa.gov' },
+  { name: 'NVIDIA', logo: nvidia, link: 'https://www.nvidia.com' },
+  { name: 'Saronic', logo: saronic, link: 'https://www.saronic.com' },
+  { name: 'SceniX', logo: scenix, link: 'https://scenix.ai' },
+  { name: 'Slip Robotics', logo: sliprobotics, link: 'https://www.sliprobotics.com' },
+  { name: 'Waabi', logo: waabi, link: 'https://waabi.ai' },
+  { name: 'Zoox', logo: zoox, link: 'https://www.zoox.com' },
 ];

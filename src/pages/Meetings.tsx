@@ -245,12 +245,12 @@ const Meetings: React.FC = () => {
         <h2 className="heading-subtitle-bold">When &amp; Where</h2>
         <dl className="meeting-when">
           <div>
-            <dt>General meeting</dt>
-            <dd>Tuesdays, 7–8 PM · Siebel 1302</dd>
+            <dt>Weekly Workshop</dt>
+            <dd>Tuesdays, 7–8 PM · Siebel CS 2406</dd>
           </div>
           <div>
-            <dt>Project meeting</dt>
-            <dd>Saturdays, 1–3 PM · Siebel 2405</dd>
+            <dt>General Meeting</dt>
+            <dd>Saturdays, 1–2 PM · Siebel CS 2405</dd>
           </div>
         </dl>
       </section>
