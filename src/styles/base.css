@@ -1,35 +1,90 @@
+:root {
+  /*
+   * Display face — a wide, sturdy serif with a large x-height and short
+   * ascenders, so the glyphs read broad rather than tall.
+   */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, 'Times New Roman',
+    serif;
+
+  /*
+   * Fraunces axes. 'opsz' is the width lever that matters here: LOW optical
+   * sizes are the sturdy, wide, low-contrast cut, high ones get narrow and
+   * spindly — so this stays low even though the type is set large. SOFT
+   * rounds the terminals slightly; WONK 0 keeps the sane letterforms.
+   */
+  --display-axes: 'opsz' 28, 'SOFT' 30, 'WONK' 0;
+  --font-body: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
+
+  /* Height of the floating navbar; used to offset page content below it. */
+  --nav-offset: 6.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   margin: 0;
-  /* height: 100%; */
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: var(--primary-white-color);
-  font-size: 1.25rem;
+  font-family: var(--font-body);
+  background-color: var(--surface);
+  color: var(--ink);
+  font-size: 1rem;
   line-height: 1.6;
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 p {
-  margin: 0.5rem;
+  margin: 0 0 1rem;
+  color: var(--ink-muted);
+  max-width: 68ch;
+}
+
+ul, ol {
+  color: var(--ink-muted);
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 a {
-  color: var(--primary-theme-color); /* Default link color */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: var(--ink);
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--hairline-strong);
+  transition: color var(--duration) var(--ease),
+    opacity var(--duration) var(--ease);
 }
 
 a:hover {
-  color: var(--primary-theme-color-hover); /* Hover color */
-  text-decoration: underline; /* Add underline on hover */
+  color: var(--ink);
+  opacity: 0.65;
+  text-decoration: underline;
 }
 
-div {
-  color: var(--primary-black-color);
+hr {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 4rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--neutral-900);
+  color: var(--neutral-0);
 }

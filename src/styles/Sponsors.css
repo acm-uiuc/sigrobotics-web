@@ -1,67 +1,66 @@
-.sponsor-intro {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.sponsor-list {
-  display: grid;
-  gap: 20px;
+/* Same treatment as "Where We've Been" on the About page: every logo ships
+   on an identical 240x150 transparent canvas, normalised so each mark covers
+   the same ink area, with the name below. */
+.sponsor-grid {
+  /* Flex rather than grid so a short final row centres under the one above
+     instead of stranding a logo on the left. The max-width keeps the count
+     per row sensible (four on desktop) at any viewport size. */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
+  gap: 3rem 2.5rem;
+  max-width: 58rem;
+  padding: 0;
+  margin: 2.5rem auto 0;
+  list-style: none;
 }
 
-/* Big sponsors grid - fewer columns, more space */
-.sponsor-list-big {
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
+.sponsor-tile {
+  flex: 0 0 11rem;
+  margin: 0;
 }
 
-/* Normal sponsors grid - standard layout */
-.sponsor-list-normal {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+@media (max-width: 640px) {
+  .sponsor-grid {
+    gap: 2.25rem 1.5rem;
+  }
+  .sponsor-tile {
+    flex: 0 0 8.5rem;
+  }
 }
 
-.sponsor-item {
-  background-color: var(--primary-dim-color);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 5px var(--primary-dim-color);
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
+.sponsor-tile a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 0.625rem;
+  text-align: center;
+  transition: opacity var(--duration) var(--ease);
 }
 
-/* Big sponsor items - more padding and space */
-.sponsor-item-big {
-  padding: 30px;
-}
-
-.sponsor-item:hover {
+.sponsor-tile a:hover {
+  opacity: 0.6;
   text-decoration: none;
-  transform: scale(1.05);
 }
 
 .sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sponsor-logo img {
+  width: 100%;
+  max-width: 9rem;
   height: auto;
-  margin-bottom: 15px;
-  border-radius: 5px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
 }
 
-/* Big sponsor logos - larger size */
-.sponsor-logo-big {
-  max-width: 300px;
-  max-height: 180px;
-}
-
-/* Normal sponsor logos - standard size */
-.sponsor-logo-normal {
-  max-width: 200px;
-  max-height: 120px;
+.sponsor-name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--ink);
 }

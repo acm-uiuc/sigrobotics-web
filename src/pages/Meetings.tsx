@@ -21,6 +21,42 @@ const sp26: Meeting[] = [
     resources: [
       {type: "slides", link: "https://docs.google.com/presentation/d/1_A7KlO1l7nkaIzwfFUKeIyLa8NTt2WNPBtr8jSUmCo0/edit"},
     ] },
+  { date: '02/03/2026', topic: 'Intro to Deep Learning',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1qGF-tzzNYqJ8r_mysc874rxoXAizDVCMGZS0z8kQgco/edit"},
+    ] },
+  { date: '02/10/2026', topic: 'Inverse Kinematics',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1YN3l-m8wtW2GzcLqFLBS8wP9cmfl5H3eFgzLxK-y82c/edit"},
+    ] },
+  { date: '02/17/2026', topic: 'Reinforcement Learning, Part 1',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1CvjB1nPwaw8ayEoBbs2VYtmTvD6hOatEgkxoll8CtS8/edit"},
+    ] },
+  { date: '02/24/2026', topic: 'Reinforcement Learning, Part 2',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1kJLmsvr72GPjTB01Y0JOTKB4zDK7YjElfVCwohWTisk/edit"},
+    ] },
+  { date: '03/03/2026', topic: 'Computer Vision, Part 1',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/15HIHmR03pu7G1SyMHtv5I_V_p0MM2HCyvt15qZZAP00/edit"},
+    ] },
+  { date: '03/10/2026', topic: 'Computer Vision, Part 2',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/16LnX5O74PLeBL_GdghYrRQld8F1fqpRyW9VSGLMHlKU/edit"},
+    ] },
+  { date: '03/24/2026', topic: 'Transformers',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1iDskpFl0zPu5_lVka2k5V2HBDpTcDrTCvmqIRYs9zyU/edit"},
+    ] },
+  { date: '03/31/2026', topic: 'Denoising Diffusion Models',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1VqFwgc80oAAjJwleR_fwfekF_U-evQKvRvi3FDOtXsw/edit"},
+    ] },
+  { date: '04/07/2026', topic: 'Score-Based Diffusion',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1IPtB_kkYFjl7sBgDPkTBvF11Bza8hk-E_iHnj9MLIqA/edit"},
+    ] },
   // { date: '', topic: '', 
   //   resources: [
   //     {type: "slides", link: ""},
@@ -115,103 +151,114 @@ const fa24: Meeting[] = [
       {type: "slides", link: "https://docs.google.com/presentation/d/16lQ9hDaYBDD3pafss-KkI-cSvQ4WVL6mLJkh7YbN6yk/edit#slide=id.g3042e88b18b_0_1"},
     ] },
 ];
+const fa26: Meeting[] = [
+  { date: '09/15/2026', topic: 'Intro to Deep Learning',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1LnXYT5ZJpLBB9dg7YrZ5WvDn_gzuiDADINTilGwbv1A/edit"},
+    ] },
+  { date: '09/22/2026', topic: 'Deep Learning Code-Along',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1pRpUWIz4nB4aXzB4kNy1ifas9vwuxWCLhjUz5ltS0nk/edit"},
+    ] },
+  { date: '09/29/2026', topic: 'Energy Models',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/128Qri-xvU1Wm8BJznDMe5sBcDf4l88AZV_0SV7byT_8/edit"},
+    ] },
+];
+
+/** "MM/DD/YYYY" -> sortable timestamp; 0 if the string is malformed. */
+const parseDate = (value: string): number => {
+  const [month, day, year] = value.split('/').map(Number);
+  if (!month || !day || !year) return 0;
+  return new Date(year, month - 1, day).getTime();
+};
+
+const SemesterSchedule = ({
+  title,
+  meetings,
+  inProgress = false,
+}: {
+  title: string;
+  meetings: Meeting[];
+  inProgress?: boolean;
+}) => {
+  // Most recent workshop first.
+  const ordered = [...meetings].sort((a, b) => parseDate(b.date) - parseDate(a.date));
+  return (
+  <section className="meeting-semester">
+    <div className="meeting-semester-head">
+      <h2 className="heading-subtitle-bold">{title}</h2>
+      {inProgress && <span className="meeting-flag">In progress</span>}
+    </div>
+
+    {meetings.length === 0 ? (
+      <p className="meeting-empty">
+        Schedule is being finalised — check back soon.
+      </p>
+    ) : (
+      <table className="meeting-schedule">
+        <colgroup>
+          <col className="meeting-col-date" />
+          <col className="meeting-col-topic" />
+          <col className="meeting-col-resources" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Resources</th>
+          </tr>
+        </thead>
+        <tbody>
+          {ordered.map((meeting, index) => (
+            <tr key={index}>
+              <td>{meeting.date}</td>
+              <td>{meeting.topic}</td>
+              <td>
+                {meeting.resources.map((resource, i) => (
+                  <a
+                    key={i}
+                    href={resource.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="meeting-resource"
+                  >
+                    {resource.type}
+                  </a>
+                ))}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </section>
+  );
+};
 
 const Meetings: React.FC = () => {
   return (
     <div className="layout-xl">
       <h1 className="heading-title">Meetings</h1>
-      <div>
-        <h2 className="heading-subtitle-bold">When & Where</h2>
-        <p><b>General Meeting:</b> Tuesdays, 7-8 PM | Siebel 1302</p>
-        <p><b>Project Meeting:</b> Saturdays, 1-3 PM | Siebel 2405</p>
-      </div>
 
-      <div className="layout-md">
-        <h2 className="heading-subtitle-bold">Spring 2026</h2>
-        <table className="meeting-schedule">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Topic</th>
-              <th>Resources</th>
-            </tr>
-          </thead>
-          <tbody>
-            {sp26.map((meeting, index) => (
-              <tr key={index}>
-                <td>{meeting.date}</td>
-                <td>{meeting.topic}</td>
-                <td>{meeting.resources.map((resource, index) => (
-                  <span key={index}>
-                    <a href={resource.link} target="_blank" rel="noopener noreferrer">
-                      {"["+resource.type+"]"}
-                    </a>
-                    {index < meeting.resources.length - 1 ? ', ' : ''}
-                  </span>
-                ))}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <section className="meeting-semester">
+        <h2 className="heading-subtitle-bold">When &amp; Where</h2>
+        <dl className="meeting-when">
+          <div>
+            <dt>Weekly Workshop</dt>
+            <dd>Tuesdays, 7–8 PM · Siebel CS 2406</dd>
+          </div>
+          <div>
+            <dt>General Meeting</dt>
+            <dd>Saturdays, 1–2 PM · Siebel CS 2405</dd>
+          </div>
+        </dl>
+      </section>
 
-      <div className="layout-md">
-        <h2 className="heading-subtitle-bold">Spring 2025</h2>
-        <table className="meeting-schedule">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Topic</th>
-              <th>Resources</th>
-            </tr>
-          </thead>
-          <tbody>
-            {sp25.map((meeting, index) => (
-              <tr key={index}>
-                <td>{meeting.date}</td>
-                <td>{meeting.topic}</td>
-                <td>{meeting.resources.map((resource, index) => (
-                  <span key={index}>
-                    <a href={resource.link} target="_blank" rel="noopener noreferrer">
-                      {"["+resource.type+"]"}
-                    </a>
-                    {index < meeting.resources.length - 1 ? ', ' : ''}
-                  </span>
-                ))}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <div className="layout-sm">
-        <h2 className="heading-subtitle-bold">Fall 2024</h2>
-        <table className="meeting-schedule">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Topic</th>
-              <th>Resources</th>
-            </tr>
-          </thead>
-          <tbody>
-            {fa24.map((meeting, index) => (
-              <tr key={index}>
-              <td>{meeting.date}</td>
-              <td>{meeting.topic}</td>
-              <td>{meeting.resources.map((resource, index) => (
-                <span key={index}>
-                  <a href={resource.link} target="_blank" rel="noopener noreferrer">
-                    {"["+resource.type+"]"}
-                  </a>
-                  {index < meeting.resources.length - 1 ? ', ' : ''}
-                </span>
-              ))}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <SemesterSchedule title="Fall 2026" meetings={fa26} inProgress />
+      <SemesterSchedule title="Spring 2026" meetings={sp26} />
+      <SemesterSchedule title="Spring 2025" meetings={sp25} />
+      <SemesterSchedule title="Fall 2024" meetings={fa24} />
     </div>
   );
 };

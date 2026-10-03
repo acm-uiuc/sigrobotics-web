@@ -1,0 +1,89 @@
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.team-member {
+  text-align: left;
+}
+
+.team-member-link {
+  display: block;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--hairline);
+  background: var(--surface-sunken);
+  aspect-ratio: 1 / 1;
+}
+
+.team-member-link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.team-member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 400ms var(--ease);
+}
+
+.team-member-link:hover .team-member-image {
+  transform: scale(1.03);
+}
+
+.team-member-name {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0.875rem 0 0;
+}
+
+/* "Where We've Been" — bare logo with the company name below it. */
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 2.5rem 1.5rem;
+  padding: 0;
+  margin: 2rem 0 0;
+  list-style: none;
+}
+
+.company-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Every logo ships on an identical 240x150 transparent canvas, already
+   normalised so each mark covers the same ink area. Rendering the whole
+   canvas at one width therefore keeps them optically equal in weight. */
+.company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.company-logo img {
+  width: 100%;
+  max-width: 7.5rem;
+  height: auto;
+  display: block;
+}
+
+.company-name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--ink);
+}

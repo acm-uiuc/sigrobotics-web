@@ -1,0 +1,72 @@
+/* Split button, in the shape of GitHub's own: action on the left,
+   count on the right, one hairline between them. */
+.gh-star {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--surface-raised);
+  transition: border-color var(--duration) var(--ease),
+    background-color var(--duration) var(--ease);
+}
+
+.gh-star:hover {
+  color: var(--ink);
+  opacity: 1;
+  text-decoration: none;
+  border-color: var(--neutral-700);
+  background: var(--surface-sunken);
+}
+
+.gh-star-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.125rem;
+}
+
+.gh-star-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  transition: fill var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+
+.gh-star:hover .gh-star-icon {
+  fill: #e3b341; /* GitHub's star yellow */
+  stroke: #b08800;
+  transform: rotate(-8deg) scale(1.08);
+}
+
+.gh-star-count {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.875rem 1.125rem;
+  border-left: 1px solid var(--hairline-strong);
+  background: var(--surface-sunken);
+  /* Same face, size and weight as .button-primary, so the pair reads as one
+     control rather than two. */
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-muted);
+}
+
+.gh-star:hover .gh-star-count {
+  color: var(--ink);
+}
