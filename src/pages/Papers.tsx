@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Papers.css';
-import { papers, Paper } from '../data/papersData';
+import { papers, memberAuthors, Paper } from '../data/papersData';
 
 const PaperCard = ({ paper }: { paper: Paper }) => {
   const primary = paper.links[0];
@@ -32,7 +32,18 @@ const PaperCard = ({ paper }: { paper: Paper }) => {
             {paper.title}
           </a>
         </h3>
-        <p className="paper-authors">{paper.authors}</p>
+        <p className="paper-authors">
+          {paper.authors.split(', ').map((author, i) => (
+            <React.Fragment key={author}>
+              {i > 0 && ', '}
+              {memberAuthors.has(author) ? (
+                <strong className="paper-author-member">{author}</strong>
+              ) : (
+                author
+              )}
+            </React.Fragment>
+          ))}
+        </p>
         <p className="paper-abstract">{paper.abstract}</p>
         <ul className="paper-links">
           {paper.links.map((link) => (
@@ -63,6 +74,9 @@ const Papers: React.FC = () => (
       </div>
     </section>
 
+    <p className="paper-legend">
+      <strong className="paper-author-member">Bold</strong> names are SIGRobotics members.
+    </p>
   </div>
 );
 

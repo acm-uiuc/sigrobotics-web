@@ -109,6 +109,17 @@
   max-width: 62ch;
 }
 
+.paper-author-member {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.paper-legend {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  margin: 2rem 0 0;
+}
+
 .paper-abstract {
   font-size: 0.9375rem;
   color: var(--ink-muted);
