@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.719dd64a.css",
-    "main.js": "/static/js/main.800c47a1.js",
+    "main.css": "/static/css/main.286d0d98.css",
+    "main.js": "/static/js/main.d31f2690.js",
     "static/js/453.0b834c22.chunk.js": "/static/js/453.0b834c22.chunk.js",
     "static/media/booster.jpg": "/static/media/booster.39af1b550b081fbd8795.jpg",
     "static/media/henry.jpg": "/static/media/henry.a1412f3286fd3d4c705a.jpg",
@@ -22,6 +22,7 @@
     "static/media/craft.jpg": "/static/media/craft.55a0952a36c9ace146de.jpg",
     "static/media/nerf2physics.jpg": "/static/media/nerf2physics.792f22acf1afb23e1503.jpg",
     "static/media/gokul.jpg": "/static/media/gokul.28e55d68e4ee92751dc5.jpg",
+    "static/media/intermimicgen.jpg": "/static/media/intermimicgen.0e695c83dec000e8bec4.jpg",
     "static/media/reasonnav.jpg": "/static/media/reasonnav.d755ca61e4efd75b934d.jpg",
     "static/media/reid.jpg": "/static/media/reid.8dfaf50351e52752afe9.jpg",
     "static/media/aarsh.jpg": "/static/media/aarsh.fb29b853eecf3f288f1b.jpg",
@@ -38,12 +39,12 @@
     "static/media/lerobot.png": "/static/media/lerobot.a4a16cd4e573dcbdb889.png",
     "static/media/placeholder.svg": "/static/media/placeholder.0859457f08a72023957a9e435aeff59e.svg",
     "index.html": "/index.html",
-    "main.719dd64a.css.map": "/static/css/main.719dd64a.css.map",
-    "main.800c47a1.js.map": "/static/js/main.800c47a1.js.map",
+    "main.286d0d98.css.map": "/static/css/main.286d0d98.css.map",
+    "main.d31f2690.js.map": "/static/js/main.d31f2690.js.map",
     "453.0b834c22.chunk.js.map": "/static/js/453.0b834c22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.719dd64a.css",
-    "static/js/main.800c47a1.js"
+    "static/css/main.286d0d98.css",
+    "static/js/main.d31f2690.js"
   ]
 }
