@@ -1,5 +1,6 @@
 // src/data/papersData.ts
 import craft from '../assets/papers/craft.jpg';
+import intermimicgen from '../assets/papers/intermimicgen.jpg';
 import nerf2physics from '../assets/papers/nerf2physics.jpg';
 import reasonnav from '../assets/papers/reasonnav.jpg';
 
@@ -23,7 +24,33 @@ export interface Paper {
   links: PaperLink[];
 }
 
+/** Authors who are SIGRobotics members; highlighted in each paper's author list. */
+export const memberAuthors = new Set([
+  'Bhargav Chandaka',
+  'Anatulya Nandi',
+  'Gloria X. Wang',
+  'Henry Che',
+  'Leo Lin',
+  'Jay Moon',
+]);
+
 export const papers: Paper[] = [
+  {
+    title:
+      'InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation',
+    authors:
+      'Yucheng Zhang, Sirui Xu, Jinhong Li, Liuyu Bian, Anatulya Nandi, Derek Zhang, Xiangchen Liu, Xueting Li, Umar Iqbal, Yu-Xiong Wang, Liang-Yan Gui',
+    venue: 'arXiv',
+    year: '2026',
+    abstract:
+      'Retargets motion-captured human-object interactions onto a humanoid with dexterous hands, trains one generalist tracking policy to execute them, then grows the dataset by keeping only the edited variants that still complete the task in simulation.',
+    preview: intermimicgen,
+    previewKind: 'page',
+    links: [
+      { label: 'Project page', url: 'https://sirui-xu.github.io/InterMimicGen' },
+      { label: 'arXiv', url: 'https://arxiv.org/abs/2610.06850' },
+    ],
+  },
   {
     title: 'CRAFT: A Tendon-Driven Hand with Hybrid Hard-Soft Compliance',
     authors: 'Leo Lin, Shivansh Patel, Jay Moon, Svetlana Lazebnik, Unnat Jain',

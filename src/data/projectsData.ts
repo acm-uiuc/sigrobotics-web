@@ -1,13 +1,16 @@
 // src/data/projectsData.ts (or wherever you prefer to place it)
 import arm from '../assets/projs/arm.png';
+import bci from '../assets/projs/bci.jpg';
 import booster from '../assets/projs/booster.jpg';
 import f1tenthfront from '../assets/projs/f1tenthfront.jpg';
 import f1tenthside from '../assets/projs/f1tenthside.jpg';
 import boosterhand from '../assets/projs/boosterhand.png';
+import hardware from '../assets/projs/hardware.jpg';
 import marc from '../assets/projs/marc.png';
 import matchabot from '../assets/projs/matchabot.jpg';
 import placeholder from '../assets/projs/placeholder.svg';
 import uavh from '../assets/projs/uavh.png';
+import wallclimbing from '../assets/projs/wallclimbing.png';
 
 export interface Project {
   title: string;
@@ -96,7 +99,7 @@ export const projects: Project[] = [
   {
     title: "Brain Computer Interface",
     description: "Controlling robot arms to do manipulation tasks via BCI interface.",
-    image: placeholder,
+    image: bci,
     link: "",
     status: "Ongoing"
   }, 
@@ -117,11 +120,18 @@ export const projects: Project[] = [
   },
   {
     title: "Hardware Group",
-    description: "Making various novel physical robots, such as a real life pixar lamp and a wall climbing robot.",
-    image: placeholder,
+    description: "Making various novel physical robots, such as a real life pixar lamp and a quasi-direct-drive actuator.",
+    image: hardware,
     link: "",
     status: "Ongoing"
-  },  
+  },
+  {
+    title: "Wall Climbing Robot",
+    description: "Inspired by Disney's VertiGo, the climbing robot is able to transition between the ground, wall, and ceiling to move in any orientation. It uses reverse suction with two rotatable propellers to keep itself on the angled surface while assisting with movement. The main purpose is to show the usability of such a mechanism for future implementations such as autonomous inspections in hard to reach areas, such as the underside of a bridge.",
+    image: wallclimbing,
+    link: "",
+    status: "Ongoing"
+  },
   {
     title: "Earth Rover SDK Development & Open Sourcing",
     description: "",
