@@ -164,6 +164,10 @@ const fa26: Meeting[] = [
     resources: [
       {type: "slides", link: "https://docs.google.com/presentation/d/128Qri-xvU1Wm8BJznDMe5sBcDf4l88AZV_0SV7byT_8/edit"},
     ] },
+  { date: '10/20/2026', topic: 'Discrete Diffusion',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1u4SzdE81VikxiVcTz31Llva1aH_V6LTw8ftfec_F8aY/edit"},
+    ] },
 ];
 
 /** "MM/DD/YYYY" -> sortable timestamp; 0 if the string is malformed. */
