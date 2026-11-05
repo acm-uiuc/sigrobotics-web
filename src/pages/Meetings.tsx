@@ -164,9 +164,17 @@ const fa26: Meeting[] = [
     resources: [
       {type: "slides", link: "https://docs.google.com/presentation/d/128Qri-xvU1Wm8BJznDMe5sBcDf4l88AZV_0SV7byT_8/edit"},
     ] },
+  { date: '10/13/2026', topic: 'Diffusion',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/14b0KGrHswMzRh9DJEoUUe7fVsePkQcKXsALXmwILaTs/edit"},
+    ] },
   { date: '10/20/2026', topic: 'Discrete Diffusion',
     resources: [
       {type: "slides", link: "https://docs.google.com/presentation/d/1u4SzdE81VikxiVcTz31Llva1aH_V6LTw8ftfec_F8aY/edit"},
+    ] },
+  { date: '10/27/2026', topic: 'Flow Matching',
+    resources: [
+      {type: "slides", link: "https://docs.google.com/presentation/d/1QimpsmzBV9wscqR38gukAAwl4HzZiJU8XJNfofHY1O0/edit"},
     ] },
 ];
 
